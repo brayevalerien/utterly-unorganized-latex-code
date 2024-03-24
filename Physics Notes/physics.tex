@@ -73,7 +73,6 @@ There are a multitude of cases we will look at where a standing wave can occur, 
 			\addplot[p5, smooth, thick] {0+(\feat*sin(deg(0.25*((x)))};
 			\addplot[p5, smooth, thick] {0+(\feat*sin(deg(0.25*(x-3.14*4)))};
 
-
 			\addplot[p6, smooth, thick] {-0.5+(\feat*sin(deg((0.375*x)-9.42477))))};
 
 			\addplot[p6, smooth, thick] {-0.5+(\feat*sin(deg((0.375*x)))))};
@@ -84,7 +83,6 @@ There are a multitude of cases we will look at where a standing wave can occur, 
 			\addplot[p7, smooth, thick] {-1+(\feat*sin(deg((0.5*x)))))};
 
 			\draw[dashed, color=pag!95] (axis cs:12.56,\pgfkeysvalueof{/pgfplots/ymin}) -- (axis cs:12.56,\pgfkeysvalueof{/pgfplots/ymax});
-
 
 		\end{axis}
 	\end{tikzpicture}
@@ -221,7 +219,6 @@ In both these examples, the pressure wave graph has nodes opposite of the displa
 			\addplot[p5, smooth, thick] {0+(\feat*sin(deg(0.1875*((x)))};
 			\addplot[p5, smooth, thick] {0+(\feat*sin(deg(0.1875*(x-3.14*5.33333)))};
 
-
 			\addplot[p6, smooth, thick] {-0.5+(\feat*sin(deg((0.3125*x)-9.42477))))};
 
 			\addplot[p6, smooth, thick] {-0.5+(\feat*sin(deg((0.3125*x)))))};
@@ -232,7 +229,6 @@ In both these examples, the pressure wave graph has nodes opposite of the displa
 			\addplot[p7, smooth, thick] {-1+(\feat*sin(deg((0.4375*x)))))};
 
 			\draw[dashed, color=pag!95] (axis cs:12.56,\pgfkeysvalueof{/pgfplots/ymin}) -- (axis cs:12.56,\pgfkeysvalueof{/pgfplots/ymax});
-
 
 		\end{axis}
 	\end{tikzpicture}
@@ -267,13 +263,11 @@ Again, these resonant frequencies only occour at certain wavelengths. The formul
 			\draw[pag!50] (0,0.4) arc (90:145:0.44);
 			\draw[pag!50] (0,0.4) arc (90:35:0.44);
 
-
 			\draw[p2,thick] (-2.5,1.5) -- (0,0);
 			\draw[p2,thick,-{stealth[length=3mm]}] (-2.5,1.5) -- (-1,0.6);
 
 			\draw[p4,thick] (2.5,1.5) -- (0,0);
 			\draw[p4,thick,-{stealth[length=3mm]}] (0,0) -- (1.2,0.72);
-
 
 			\draw[thick, dashed] (0,1.5) -- (0,0);
 			\node at (-0.28,0.6) {$\theta_i$};
@@ -281,19 +275,14 @@ Again, these resonant frequencies only occour at certain wavelengths. The formul
 			\node at (-2,0.5) {\tiny Incident Ray};
 			\node at (2,0.5) {\tiny Reflected Ray};
 
-
 			\draw[ultra thick, pag!50] (-3,0) -- (3,0);
 		\end{tikzpicture}
 
 	\end{minipage}
 
-
 \end{figure}
 
-
-
 \begin{figure}[h]
-
 
 	\begin{minipage}{0.62\textwidth}
 		\textbf{Flat Mirror} - We can illustrate the resultant image from a flat mirror using ray tracing. In this diagram, the image is virtual, meaning we perceive the rays as coming from behind the mirror. Each reflected ray can be traced back into the mirror, forming a virtual image of the object.
@@ -301,13 +290,11 @@ Again, these resonant frequencies only occour at certain wavelengths. The formul
 	\begin{minipage}{0.2\textwidth}
 		\hspace*{5pt}	\begin{tikzpicture}
 
-
 			% Object line
 			\draw[thick] (-2,0) -- (-2,2);
 
-			%Image Line
+			% Image Line
 			\draw[thick] (2,0) -- (2,2);
-
 
 			% Ray 1
 			\draw[p2] (-3,2) -- (0,2);
@@ -318,8 +305,7 @@ Again, these resonant frequencies only occour at certain wavelengths. The formul
 
 			\draw[color=p2] (-3,2) -- (0,2);
 
-
-			%Ray 2	
+			% Ray 2	
 			\draw[p4,] (-2,2) -- (0,1.25);
 			\draw[p4,-{stealth[length=3mm]}] (-2,2) -- (-0.5,1.4375);
 			\draw[p4,] (0,1.25) -- (-2,0.5);
@@ -328,7 +314,7 @@ Again, these resonant frequencies only occour at certain wavelengths. The formul
 			\draw[p4,-{stealth[length=3mm]}] (0,1.25) -- (-2.4,0.35);
 			\draw[dashed] (0,1.25) -- (2,2);
 
-			%Ray 3
+			% Ray 3
 			\draw[p6,] (-2,2) -- (0,0.5);
 			\draw[p6,-{stealth[length=3mm]}] (-2,2) -- (-0.5,(2-0.75*1.5);
 			\draw[p6,] (0,0.5) -- (-0.66666666,0);
@@ -349,7 +335,6 @@ Again, these resonant frequencies only occour at certain wavelengths. The formul
 
 \begin{figure}[h]
 
-
 	\begin{minipage}{0.62\textwidth}
 		\textbf{Sign Convention} - It is important to keep in mind the sign convention when we are dealing with images. When talking about mirrors, the horizontal distance is negative when we go past the mirror. In the diagram on the right, $n$ simply refers to some unit of length.
 	\end{minipage}
@@ -367,28 +352,24 @@ Again, these resonant frequencies only occour at certain wavelengths. The formul
 
 \end{figure}
 
-
 \hspace{-15pt}\begin{minipage}{0.62\textwidth}
 	\textbf{Magnification} - The magnification is simply the image height divided by the object height. A larger image means a greater magnification. Magnification is defined as $M=\frac{I}{O}=\frac{-v}{u}$. We can also define it using the horizontal distance of the image. A negative magnification is a inverted image. We add a negative into the formula because $v$ is negative by nature.
 \end{minipage}
 \begin{minipage}{0.2\textwidth}
 	\hspace*{5pt}	\begin{tikzpicture}
 
-
 		% Object line
 		\draw[ultra thick, pag!60] (-1.5,0) -- (-1.5,2);
 		\draw[thin,|{stealth}-{stealth}|, pag!50] (-1.75,0.018) -- (-1.75,2);
 		\node at (-1.9, 1) {\small $O$};
 
-
-		%Image Line
+		% Image Line
 		\draw[ultra thick, pag!90] (1.5,0) -- (1.5,2);
 
-		%Image Line
+		% Image Line
 		\draw[thick, p4] (0.75,0) -- (0.75,1.5);
 		\draw[thin,|{stealth}-{stealth}|, pag!50] (0.5,0.018) -- (0.5,1.5);
 		\node at (0.32, 0.75) {\tiny $I_1$};
-
 
 		\draw[thick, p6] (2.25,0) -- (2.25,2.5);
 		\draw[thin,|{stealth}-{stealth}|, pag!50] (2.5,0.018) -- (2.5,2.5);
@@ -427,7 +408,6 @@ Again, these resonant frequencies only occour at certain wavelengths. The formul
 		\newcommand{\drawLines}[2]{ % #1 represents the value for \rayqy, #2 for shade number
 		\draw[thick] ({\rlength-(\rcirc-(\rcirc*cos((\circdeg))))},{0-(((sin(\circdeg))*\rcirc))}) arc (-\circdeg:\circdeg:\rcirc);
 
-
 		\draw[color=p#2] (0,#1) -- ({\rlength- (\rcirc- ( ( ((\rcirc)^2) - ((#1)^2) )^(0.5) ))},#1);
 		\draw[color=p#2,-{stealth}] (0,#1) -- (\rlength*0.6,#1);
 		\draw[color=p#2,-{stealth}] (0,#1) -- (\rlength*0.2,#1);
@@ -438,7 +418,6 @@ Again, these resonant frequencies only occour at certain wavelengths. The formul
 
 		\draw[-{stealth},color=p#2] ({\rlength- (\rcirc- ( ( ((\rcirc)^2) - ((#1)^2) )^(0.5) ))},#1) -- ({(\rlength*0.85)},{( (\rlength*0.85)-(\rlength/2))*(#1/( (\rlength/2)-(\rcirc- ( ( ((\rcirc)^2) - ((#1)^2) )^(0.5) ))   )});
 		}
-
 
 		\newcounter{shadeCounter}
 		\setcounter{shadeCounter}{2} % Initialize the counter to 1 (for the first shade)
@@ -453,7 +432,6 @@ Again, these resonant frequencies only occour at certain wavelengths. The formul
 
 		% Mark the center point (center of the mirror)
 		\filldraw (0,0) circle (1.5pt) node[below] {\small C};
-
 
 		% Optional: Add rays (incident and reflected)
 		% \draw[->] (3,0.5) -- (1,0);  % Example of an incident ray
@@ -481,19 +459,15 @@ Again, these resonant frequencies only occour at certain wavelengths. The formul
 		\newcommand{\drawLines}[2]{ % #1 represents the value for \rayqy, #2 for shade number
 		\draw[thick] ({\rlength-(\rcircc-(\rcircc*cos((\circdeg))))},{0-(((sin(\circdeg))*\rcircc))}) arc (-\circdeg:\circdeg:\rcircc);
 
-
 		\draw[color=p#2] (\rlength/2,#1) -- ({\rlength- (\rcircc+ ( ( ((\rcircc)^2) - ((#1)^2) )^(0.5) ))},#1);
 		\draw[color=p#2,-{stealth}] (\rlength/2,#1) -- (\rlength*0.8,#1);
 		\draw[color=p#2,{stealth}-] (\rlength/2,#1) -- (\rlength*0.2,#1);
-
-
 
 		\draw[pag!60, dashed, thin] ({\rlength- (\rcircc+ ( ( ((\rcircc)^2) - ((#1)^2) )^(0.5) ))},#1) -- ({\rlength+(\rlength/2)},0);
 
 		\draw[color=p#2, -{stealth}] ({\rlength- (\rcircc+ ( ( ((\rcircc)^2) - ((#1)^2) )^(0.5) ))},#1) -- ({\rlength-\temptempha}, { #1+((\temptempha)*((#1)/ ((\rlength+(\rlength/2))-(\rlength- (\rcircc+ ( ( ((\rcircc)^2) - ((#1)^2) )^(0.5) ))) )))});
 
 		}
-
 
 		\newcounter{shadeCounterd}
 		\setcounter{shadeCounterd}{2} % Initialize the counter to 1 (for the first shade)
@@ -508,7 +482,6 @@ Again, these resonant frequencies only occour at certain wavelengths. The formul
 
 		% Mark the center point (center of the mirror)
 
-
 		% Optional: Add rays (incident and reflected)
 		% \draw[->] (3,0.5) -- (1,0);  % Example of an incident ray
 		% \draw[->] (1,0) -- (3,-0.5); % Example of a reflected ray
@@ -518,7 +491,7 @@ Again, these resonant frequencies only occour at certain wavelengths. The formul
 \hspace{-15pt}\begin{minipage}{0.62\textwidth}
 	\textbf{Spherical Aberration} - It is very important to note that while for the scope of this course we say that a reflected ray always passes through the focal point, in reality, spherical aberration occurs resulting in the diagram on the right. More specifically, we use paraxial approximation. The closer a ray is to the central axis, the less its reflection strays from the focal point. Paraxial approximation uses this assuming that the mirror is small relative to the radius of curvature, and subsequently that all the rays will pass through the real focus.
 \end{minipage}
-%Spherical Abberation Diagram
+% Spherical Abberation Diagram
 \begin{minipage}{0.2\textwidth}
 	\vspace{-10pt}
 	\hspace*{5pt}		\begin{tikzpicture}
@@ -539,7 +512,6 @@ Again, these resonant frequencies only occour at certain wavelengths. The formul
 
 		}
 
-
 		\newcounter{shadeCounterw}
 		\setcounter{shadeCounterw}{2} % Initialize the counter to 1 (for the first shade)
 
@@ -547,7 +519,6 @@ Again, these resonant frequencies only occour at certain wavelengths. The formul
 				\drawLines{\rayqy}{\theshadeCounterw} % Use the current value of the counter for the shade
 				\addtocounter{shadeCounterw}{0} % Increment the counter by 2 for the next shade
 			}
-
 
 		% Draw the central axis
 		\draw[dashed] (0,0) -- (\rlength,0);
@@ -566,20 +537,16 @@ Again, these resonant frequencies only occour at certain wavelengths. The formul
 \end{minipage}
 \vspace{20pt}
 
-%Concave Spherical Mirror
-%BEGIN_FOLD
+% Concave Spherical Mirror
+
 \hspace{-16pt}
 \begin{minipage}{16.5726cm}
 	\noindent\textbf{Concave Ray Diagrams} - When drawing ray diagrams for concave mirrors, draw 4 general rays, when you can. First, parallel to the central axis. Second, to the central axis at the mirror. Third, draw through the focus. Fourth, draw through the central axis. An object beyond the focus produces a virtual image.
 	\vspace{10pt}
 \end{minipage}
 
-%END_FOLD
+% Diagram Varaibles
 
-
-
-%Diagram Varaibles
-%BEGIN_FOLD
 \newcommand{\dheight}{2.5}
 \newcommand{\dwidth}{-10}
 \newcommand{\dcircdeg}{7}
@@ -594,13 +561,10 @@ Again, these resonant frequencies only occour at certain wavelengths. The formul
 \newcommand{\tempscaler}{2.12}
 \newcommand{\tempdistance}{90pt}
 
-%END_FOLD
+% Concave Mirror examples	
 
-
-%Concave Mirror examples	
-%BEGIN_FOLD
 \hspace{-20pt}
-\begin{minipage}{0.32\textwidth} %Diagram 1
+\begin{minipage}{0.32\textwidth} % Diagram 1
 	\fcolorbox{\rbcolor}{\rbocolor}{\begin{tikzpicture}[yscale=\scalecontrol, xscale={(16.5726/\tempscaler)/(abs(\dwidth)+\rcirc)}]
 			\clip (\dwidth,-\dheight) rectangle (\rcirc,\dheight);
 			% Draw the concave mirror
@@ -612,11 +576,11 @@ Again, these resonant frequencies only occour at certain wavelengths. The formul
 
 			% Draw Object
 			\draw [ultra thick] (\imaged,0) -- (\imaged,\height);
-			%Calculate Image Distance
+			% Calculate Image Distance
 			\pgfmathsetmacro{\imagedis}{(\rlength-abs(  ( (2/\rlength)-(1/(\rcirc-\imaged))  )^(-1)   ))}
-			%Calculate Image Height
+			% Calculate Image Height
 			\pgfmathsetmacro{\imagehei}{\height* ((abs(((2/\rlength)-(1/(\rcirc-\imaged)))^(-1))) / (\rcirc-\imaged))  }
-			%Draw Image
+			% Draw Image
 			\draw[line width=\imagethickness, \imagecolor] (\imagedis,0) -- (\imagedis, -\imagehei);
 			% Draw the central axis
 			\draw[dashed] (\rayqx,0) -- (\rlength,0);
@@ -624,23 +588,16 @@ Again, these resonant frequencies only occour at certain wavelengths. The formul
 			\newcommand{\parline}[2]{ % #1 represents the value for \rayqy, #2 for shade number
 			\draw[thick] ({\rlength-(\rcirc-(\rcirc*cos((\circdeg))))},{0-(((sin(\circdeg))*\rcirc))}) arc (-\circdeg:\circdeg:\rcirc);
 
-
 			\draw[color=p#2\newcolord] (\imaged,#1) -- ({\rlength- (\rcirc- ( ( ((\rcirc)^2) - ((#1)^2) )^(0.5) ))},#1);
 
 			\draw[-{stealth},color=p#2\newcolord] ({\rlength- (\rcirc- ( ( ((\rcirc)^2) - ((#1)^2) )^(0.5) ))},#1) -- (\rayqx,{( \rayqx-(\rlength/2))*(#1/( (\rlength/2)-(\rcirc- ( ( ((\rcirc)^2) - ((#1)^2) )^(0.5) ))   )});}
-
-
 
 			\newcommand{\drawLinez}[2]{ % #1 represents the value for \rayqy, #2 for shade number
 			\draw[p#2\newcolord] (\imaged,#1) -- (\rlength,0);
 			\draw[p#2\newcolord,-{stealth}] (\rlength,0) -- (\rayqx, {(0+ (\rayqx-\rlength)*( (#1) / ((\rlength-\imaged)   )  }  );}
 
-
 			\newcommand{\drawLinezz}[2]{ % #1 represents the value for \rayqy, #2 for shade number
 				\draw [{stealth}-,p#2\newcolord] (\rayqx, {0+(\rayqx * ( (#1)/(\imaged) ))}) -- ({\rcirc*( cos(atan((#1)/ (\imaged)))) }, {( ((\rcirc)^2) - ((\rcirc*( cos(atan((#1)/ (\imaged)))) )^2) )^(1/2) });}
-
-
-
 
 			\newcommand{\drawRayThroughF}[2]{ % #1 represents the value for \rayqy
 				% Define point F
@@ -679,12 +636,9 @@ Again, these resonant frequencies only occour at certain wavelengths. The formul
 				\draw[p#2\newcolord, thick] (\xTop, \yTop) -- (\xIntersect, \yIntersect);
 				\draw[p#2\newcolord, thick, -stealth] (\xIntersect, \yIntersect) -- (\rayqx, \yIntersect);}
 
-
-
 			\parline{\height}{1}
 			\drawLinez{\height}{3}
 			\drawRayThroughF{\height}{7}
-
 
 			% Mark the focus point (halfway between mirror and center)
 			\filldraw (\rlength/2,0) circle (1.5pt) node[below] {\small F};
@@ -692,11 +646,10 @@ Again, these resonant frequencies only occour at certain wavelengths. The formul
 			% Mark the center point (center of the mirror)
 			\filldraw (0,0) circle (1.5pt) node[below] {\small C};
 
-
 		\end{tikzpicture}}
 \end{minipage}
 \hspace{\tempdistance}
-\begin{minipage}{0.32\textwidth} %Diagram 2
+\begin{minipage}{0.32\textwidth} % Diagram 2
 	\fcolorbox{\rbcolor}{\rbocolor}{\begin{tikzpicture}[yscale=\scalecontrol, xscale={(16.5726/\tempscaler)/(abs(\dwidth)+\rcirc)}]
 			\clip (\dwidth,-\dheight) rectangle (\rcirc,\dheight);
 			% Draw the concave mirror
@@ -706,40 +659,30 @@ Again, these resonant frequencies only occour at certain wavelengths. The formul
 			\newcommand{\imaged}{-1.5}
 			\newcommand{\height}{1.5}
 
-
-
 			% Draw Object
 			\draw [ultra thick] (\imaged,0) -- (\imaged,\height);
-			%Calculate Image Distance
+			% Calculate Image Distance
 			\pgfmathsetmacro{\imagedis}{(\rlength-abs(  ( (2/\rlength)-(1/(\rcirc-\imaged))  )^(-1)   ))}
-			%Calculate Image Height
+			% Calculate Image Height
 			\pgfmathsetmacro{\imagehei}{\height* ((abs(((2/\rlength)-(1/(\rcirc-\imaged)))^(-1))) / (\rcirc-\imaged))  }
-			%Draw Image
+			% Draw Image
 			\draw[line width=\imagethickness, \imagecolor] (\imagedis,0) -- (\imagedis, -\imagehei);
 			% Draw the central axis
 			\draw[dashed] (\rayqx,0) -- (\rlength,0);
 
-
 			\newcommand{\parline}[2]{ % #1 represents the value for \rayqy, #2 for shade number
 			\draw[thick] ({\rlength-(\rcirc-(\rcirc*cos((\circdeg))))},{0-(((sin(\circdeg))*\rcirc))}) arc (-\circdeg:\circdeg:\rcirc);
-
 
 			\draw[color=p#2] (\imaged,#1) -- ({\rlength- (\rcirc- ( ( ((\rcirc)^2) - ((#1)^2) )^(0.5) ))},#1);
 
 			\draw[-{stealth},color=p#2] ({\rlength- (\rcirc- ( ( ((\rcirc)^2) - ((#1)^2) )^(0.5) ))},#1) -- (\rayqx,{( \rayqx-(\rlength/2))*(#1/( (\rlength/2)-(\rcirc- ( ( ((\rcirc)^2) - ((#1)^2) )^(0.5) ))   )});}
 
-
-
 			\newcommand{\drawLinez}[2]{ % #1 represents the value for \rayqy, #2 for shade number
 			\draw[p#2] (\imaged,#1) -- (\rlength,0);
 			\draw[p#2,-{stealth}] (\rlength,0) -- (\rayqx, {(0+ (\rayqx-\rlength)*( (#1) / ((\rlength-\imaged)   )  }  );}
 
-
 			\newcommand{\drawLinezz}[2]{ % #1 represents the value for \rayqy, #2 for shade number
 				\draw [{stealth}-,p#2] (\rayqx, {0+(\rayqx * ( (#1)/(\imaged) ))}) -- ({\rcirc*( cos(atan((#1)/ (\imaged)))) }, {( ((\rcirc)^2) - ((\rcirc*( cos(atan((#1)/ (\imaged)))) )^2) )^(1/2) });}
-
-
-
 
 			\newcommand{\drawRayThroughF}[2]{ % #1 represents the value for \rayqy
 				% Define point F
@@ -778,12 +721,9 @@ Again, these resonant frequencies only occour at certain wavelengths. The formul
 				\draw[p#2, thick] (\xTop, \yTop) -- (\xIntersect, \yIntersect);
 				\draw[p#2, thick, -stealth] (\xIntersect, \yIntersect) -- (\rayqx, \yIntersect);}
 
-
-
 			\parline{\height}{1\newcolord}
 			\drawLinez{\height}{3\newcolord}
 			\drawRayThroughF{\height}{7\newcolord}
-
 
 			% Mark the focus point (halfway between mirror and center)
 			\filldraw (\rlength/2,0) circle (1.5pt) node[below] {\small F};
@@ -791,15 +731,12 @@ Again, these resonant frequencies only occour at certain wavelengths. The formul
 			% Mark the center point (center of the mirror)
 			\filldraw (0,0) circle (1.5pt) node[below] {\small C};
 
-
-
-
 		\end{tikzpicture}}
 \end{minipage}
 
 \vspace{\dspace}
 \hspace{-20pt}
-\begin{minipage}{0.32\textwidth} %Diagram 3
+\begin{minipage}{0.32\textwidth} % Diagram 3
 	\fcolorbox{\rbcolor}{\rbocolor}{\begin{tikzpicture}[yscale=\scalecontrol, xscale={(16.5726/\tempscaler)/(abs(\dwidth)+\rcirc)}]
 			\clip (\dwidth,-\dheight) rectangle (\rcirc,\dheight);
 			% Draw the concave mirror
@@ -811,11 +748,11 @@ Again, these resonant frequencies only occour at certain wavelengths. The formul
 
 			% Draw Object
 			\draw [ultra thick] (\imaged,0) -- (\imaged,\height);
-			%Calculate Image Distance
+			% Calculate Image Distance
 			\pgfmathsetmacro{\imagedis}{(\rlength-abs(  ( (2/\rlength)-(1/(\rcirc-\imaged))  )^(-1)   ))}
-			%Calculate Image Height
+			% Calculate Image Height
 			\pgfmathsetmacro{\imagehei}{\height* ((abs(((2/\rlength)-(1/(\rcirc-\imaged)))^(-1))) / (\rcirc-\imaged))  }
-			%Draw Image
+			% Draw Image
 			\draw[line width=\imagethickness, \imagecolor] (\imagedis,0) -- (\imagedis, -\imagehei);
 			% Draw the central axis
 			\draw[dashed] (\rayqx,0) -- (\rlength,0);
@@ -823,23 +760,16 @@ Again, these resonant frequencies only occour at certain wavelengths. The formul
 			\newcommand{\parline}[2]{ % #1 represents the value for \rayqy, #2 for shade number
 			\draw[thick] ({\rlength-(\rcirc-(\rcirc*cos((\circdeg))))},{0-(((sin(\circdeg))*\rcirc))}) arc (-\circdeg:\circdeg:\rcirc);
 
-
 			\draw[color=p#2] (\imaged,#1) -- ({\rlength- (\rcirc- ( ( ((\rcirc)^2) - ((#1)^2) )^(0.5) ))},#1);
 
 			\draw[-{stealth},color=p#2] ({\rlength- (\rcirc- ( ( ((\rcirc)^2) - ((#1)^2) )^(0.5) ))},#1) -- (\rayqx,{( \rayqx-(\rlength/2))*(#1/( (\rlength/2)-(\rcirc- ( ( ((\rcirc)^2) - ((#1)^2) )^(0.5) ))   )});}
-
-
 
 			\newcommand{\drawLinez}[2]{ % #1 represents the value for \rayqy, #2 for shade number
 			\draw[p#2] (\imaged,#1) -- (\rlength,0);
 			\draw[p#2,-{stealth}] (\rlength,0) -- (\rayqx, {(0+ (\rayqx-\rlength)*( (#1) / ((\rlength-\imaged)   )  }  );}
 
-
 			\newcommand{\drawLinezz}[2]{ % #1 represents the value for \rayqy, #2 for shade number
 				\draw [{stealth}-,p#2] (\rayqx, {0+(\rayqx * ( (#1)/(\imaged) ))}) -- ({\rcirc*( cos(atan((#1)/ (\imaged)))) }, {( ((\rcirc)^2) - ((\rcirc*( cos(atan((#1)/ (\imaged)))) )^2) )^(1/2) });}
-
-
-
 
 			\newcommand{\drawRayThroughF}[2]{ % #1 represents the value for \rayqy
 				% Define point F
@@ -878,12 +808,9 @@ Again, these resonant frequencies only occour at certain wavelengths. The formul
 				\draw[p#2, thick] (\xTop, \yTop) -- (\xIntersect, \yIntersect);
 				\draw[p#2, thick, -stealth] (\xIntersect, \yIntersect) -- (\rayqx, \yIntersect);}
 
-
-
 			\parline{\height}{1\newcolord}
 			\drawLinez{\height}{3\newcolord}
 			\drawRayThroughF{\height}{7\newcolord}
-
 
 			% Mark the focus point (halfway between mirror and center)
 			\filldraw (\rlength/2,0) circle (1.5pt) node[below] {\small F};
@@ -891,13 +818,10 @@ Again, these resonant frequencies only occour at certain wavelengths. The formul
 			% Mark the center point (center of the mirror)
 			\filldraw (0,0) circle (1.5pt) node[below] {\small C};
 
-
-
-
 		\end{tikzpicture}}
 \end{minipage}
 \hspace{\tempdistance}
-\begin{minipage}{0.32\textwidth} %Diagram 4
+\begin{minipage}{0.32\textwidth} % Diagram 4
 	\fcolorbox{\rbcolor}{\rbocolor}{\begin{tikzpicture}[yscale=\scalecontrol, xscale={(16.5726/\tempscaler)/(abs(\dwidth)+\rcirc)}]
 			\clip (\dwidth,-\dheight) rectangle (\rcirc,\dheight);
 			% Draw the concave mirror
@@ -909,11 +833,11 @@ Again, these resonant frequencies only occour at certain wavelengths. The formul
 
 			% Draw Object
 			\draw [ultra thick] (\imaged,0) -- (\imaged,\height);
-			%Calculate Image Distance
+			% Calculate Image Distance
 			\pgfmathsetmacro{\imagedis}{(\rlength-abs(  ( (2/\rlength)-(1/(\rcirc-\imaged))  )^(-1)   ))}
-			%Calculate Image Height
+			% Calculate Image Height
 			\pgfmathsetmacro{\imagehei}{\height* ((abs(((2/\rlength)-(1/(\rcirc-\imaged)))^(-1))) / (\rcirc-\imaged))  }
-			%Draw Image
+			% Draw Image
 			\draw[line width=\imagethickness, \imagecolor] (\imagedis,0) -- (\imagedis, -\imagehei);
 			% Draw the central axis
 			\draw[dashed] (\rayqx,0) -- (\rlength,0);
@@ -921,23 +845,16 @@ Again, these resonant frequencies only occour at certain wavelengths. The formul
 			\newcommand{\parline}[2]{ % #1 represents the value for \rayqy, #2 for shade number
 			\draw[thick] ({\rlength-(\rcirc-(\rcirc*cos((\circdeg))))},{0-(((sin(\circdeg))*\rcirc))}) arc (-\circdeg:\circdeg:\rcirc);
 
-
 			\draw[color=p#2] (\imaged,#1) -- ({\rlength- (\rcirc- ( ( ((\rcirc)^2) - ((#1)^2) )^(0.5) ))},#1);
 
 			\draw[-{stealth},color=p#2] ({\rlength- (\rcirc- ( ( ((\rcirc)^2) - ((#1)^2) )^(0.5) ))},#1) -- (\rayqx,{( \rayqx-(\rlength/2))*(#1/( (\rlength/2)-(\rcirc- ( ( ((\rcirc)^2) - ((#1)^2) )^(0.5) ))   )});}
-
-
 
 			\newcommand{\drawLinez}[2]{ % #1 represents the value for \rayqy, #2 for shade number
 			\draw[p#2] (\imaged,#1) -- (\rlength,0);
 			\draw[p#2,-{stealth}] (\rlength,0) -- (\rayqx, {(0+ (\rayqx-\rlength)*( (#1) / ((\rlength-\imaged)   )  }  );}
 
-
 			\newcommand{\drawLinezz}[2]{ % #1 represents the value for \rayqy, #2 for shade number
 				\draw [{stealth}-,p#2] (\rayqx, {0+(\rayqx * ( (#1)/(\imaged) ))}) -- ({\rcirc*( cos(atan((#1)/ (\imaged)))) }, {( ((\rcirc)^2) - ((\rcirc*( cos(atan((#1)/ (\imaged)))) )^2) )^(1/2) });}
-
-
-
 
 			\newcommand{\drawRayThroughF}[2]{ % #1 represents the value for \rayqy
 				% Define point F
@@ -976,13 +893,10 @@ Again, these resonant frequencies only occour at certain wavelengths. The formul
 				\draw[p#2, thick] (\xTop, \yTop) -- (\xIntersect, \yIntersect);
 				\draw[p#2, thick, -stealth] (\xIntersect, \yIntersect) -- (\rayqx, \yIntersect);}
 
-
-
 			\parline{\height}{1\newcolord}
 			\drawLinez{\height}{3\newcolord}
 			\drawLinezz{\height}{5\newcolord}
 			\drawRayThroughF{\height}{7\newcolord}
-
 
 			% Mark the focus point (halfway between mirror and center)
 			\filldraw (\rlength/2,0) circle (1.5pt) node[below] {\small F};
@@ -990,15 +904,12 @@ Again, these resonant frequencies only occour at certain wavelengths. The formul
 			% Mark the center point (center of the mirror)
 			\filldraw (0,0) circle (1.5pt) node[below] {\small C};
 
-
-
-
 		\end{tikzpicture}}
 \end{minipage}
 
 \vspace{\dspace}
 \hspace{-20pt}
-\begin{minipage}{0.32\textwidth} %Diagram 5
+\begin{minipage}{0.32\textwidth} % Diagram 5
 	\fcolorbox{\rbcolor}{\rbocolor}{\begin{tikzpicture}[yscale=\scalecontrol, xscale={(16.5726/\tempscaler)/(abs(\dwidth)+\rcirc)}]
 			\clip (\dwidth,-\dheight) rectangle (\rcirc,\dheight);
 			% Draw the concave mirror
@@ -1010,11 +921,11 @@ Again, these resonant frequencies only occour at certain wavelengths. The formul
 
 			% Draw Object
 			\draw [ultra thick] (\imaged,0) -- (\imaged,\height);
-			%Calculate Image Distance
+			% Calculate Image Distance
 			\pgfmathsetmacro{\imagedis}{(\rlength-abs(  ( (2/\rlength)-(1/(\rcirc-\imaged))  )^(-1)   ))}
-			%Calculate Image Height
+			% Calculate Image Height
 			\pgfmathsetmacro{\imagehei}{\height* ((abs(((2/\rlength)-(1/(\rcirc-\imaged)))^(-1))) / (\rcirc-\imaged))  }
-			%Draw Image
+			% Draw Image
 			\draw[line width=\imagethickness, \imagecolor] (\imagedis,0) -- (\imagedis, -\imagehei);
 			% Draw the central axis
 			\draw[dashed] (\rayqx,0) -- (\rlength,0);
@@ -1022,23 +933,16 @@ Again, these resonant frequencies only occour at certain wavelengths. The formul
 			\newcommand{\parline}[2]{ % #1 represents the value for \rayqy, #2 for shade number
 			\draw[thick] ({\rlength-(\rcirc-(\rcirc*cos((\circdeg))))},{0-(((sin(\circdeg))*\rcirc))}) arc (-\circdeg:\circdeg:\rcirc);
 
-
 			\draw[color=p#2] (\imaged,#1) -- ({\rlength- (\rcirc- ( ( ((\rcirc)^2) - ((#1)^2) )^(0.5) ))},#1);
 
 			\draw[-{stealth},color=p#2] ({\rlength- (\rcirc- ( ( ((\rcirc)^2) - ((#1)^2) )^(0.5) ))},#1) -- (\rayqx,{( \rayqx-(\rlength/2))*(#1/( (\rlength/2)-(\rcirc- ( ( ((\rcirc)^2) - ((#1)^2) )^(0.5) ))   )});}
-
-
 
 			\newcommand{\drawLinez}[2]{ % #1 represents the value for \rayqy, #2 for shade number
 			\draw[p#2] (\imaged,#1) -- (\rlength,0);
 			\draw[p#2,-{stealth}] (\rlength,0) -- (\rayqx, {(0+ (\rayqx-\rlength)*( (#1) / ((\rlength-\imaged)   )  }  );}
 
-
 			\newcommand{\drawLinezz}[2]{ % #1 represents the value for \rayqy, #2 for shade number
 				\draw [{stealth}-,p#2] (\rayqx, {0+(\rayqx * ( (#1)/(\imaged) ))}) -- ({\rcirc*( cos(atan((#1)/ (\imaged)))) }, {( ((\rcirc)^2) - ((\rcirc*( cos(atan((#1)/ (\imaged)))) )^2) )^(1/2) });}
-
-
-
 
 			\newcommand{\drawRayThroughF}[2]{ % #1 represents the value for \rayqy
 				% Define point F
@@ -1077,13 +981,10 @@ Again, these resonant frequencies only occour at certain wavelengths. The formul
 				\draw[p#2, thick] (\xTop, \yTop) -- (\xIntersect, \yIntersect);
 				\draw[p#2, thick, -stealth] (\xIntersect, \yIntersect) -- (\rayqx, \yIntersect);}
 
-
-
 			\parline{\height}{1\newcolord}
 			\drawLinez{\height}{3\newcolord}
 			\drawLinezz{\height}{5\newcolord}
 			\drawRayThroughF{\height}{7\newcolord}
-
 
 			% Mark the focus point (halfway between mirror and center)
 			\filldraw (\rlength/2,0) circle (1.5pt) node[below] {\small F};
@@ -1091,13 +992,10 @@ Again, these resonant frequencies only occour at certain wavelengths. The formul
 			% Mark the center point (center of the mirror)
 			\filldraw (0,0) circle (1.5pt) node[below] {\small C};
 
-
-
-
 		\end{tikzpicture}}
 \end{minipage}
 \hspace{\tempdistance}
-\begin{minipage}{0.32\textwidth} %Diagram 6
+\begin{minipage}{0.32\textwidth} % Diagram 6
 	\fcolorbox{\rbcolor}{\rbocolor}{\begin{tikzpicture}[yscale=\scalecontrol, xscale={(16.5726/\tempscaler)/(abs(\dwidth)+\rcirc)}]
 			\clip (\dwidth,-\dheight) rectangle (\rcirc,\dheight);
 			% Draw the concave mirror
@@ -1115,23 +1013,16 @@ Again, these resonant frequencies only occour at certain wavelengths. The formul
 			\newcommand{\parline}[2]{ % #1 represents the value for \rayqy, #2 for shade number
 			\draw[thick] ({\rlength-(\rcirc-(\rcirc*cos((\circdeg))))},{0-(((sin(\circdeg))*\rcirc))}) arc (-\circdeg:\circdeg:\rcirc);
 
-
 			\draw[color=p#2] (\imaged,#1) -- ({\rlength- (\rcirc- ( ( ((\rcirc)^2) - ((#1)^2) )^(0.5) ))},#1);
 
 			\draw[-{stealth},color=p#2] ({\rlength- (\rcirc- ( ( ((\rcirc)^2) - ((#1)^2) )^(0.5) ))},#1) -- (\rayqx,{( \rayqx-(\rlength/2))*(#1/( (\rlength/2)-(\rcirc- ( ( ((\rcirc)^2) - ((#1)^2) )^(0.5) ))   )});}
-
-
 
 			\newcommand{\drawLinez}[2]{ % #1 represents the value for \rayqy, #2 for shade number
 			\draw[p#2] (\imaged,#1) -- (\rlength,0);
 			\draw[p#2,-{stealth}] (\rlength,0) -- (\rayqx, {(0+ (\rayqx-\rlength)*( (#1) / ((\rlength-\imaged)   )  }  );}
 
-
 			\newcommand{\drawLinezz}[2]{ % #1 represents the value for \rayqy, #2 for shade number
 				\draw [{stealth}-,p#2] (\rayqx, {0+(\rayqx * ( (#1)/(\imaged) ))}) -- ({\rcirc*( cos(atan((#1)/ (\imaged)))) }, {( ((\rcirc)^2) - ((\rcirc*( cos(atan((#1)/ (\imaged)))) )^2) )^(1/2) });}
-
-
-
 
 			\newcommand{\drawRayThroughF}[2]{ % #1 represents the value for \rayqy
 				% Define point F
@@ -1170,8 +1061,6 @@ Again, these resonant frequencies only occour at certain wavelengths. The formul
 				\draw[p#2, thick] (\xTop, \yTop) -- (\xIntersect, \yIntersect);
 				\draw[p#2, thick, -stealth] (\xIntersect, \yIntersect) -- (\rayqx, \yIntersect);}
 
-
-
 			\parline{\height}{1\newcolord}
 			\drawLinez{\height}{3\newcolord}
 			\drawLinezz{\height}{5\newcolord}
@@ -1182,9 +1071,6 @@ Again, these resonant frequencies only occour at certain wavelengths. The formul
 			% Mark the center point (center of the mirror)
 			\filldraw (0,0) circle (1.5pt) node[below] {\small C};
 
-
-
-
 		\end{tikzpicture}}
 \end{minipage}
 
@@ -1193,7 +1079,7 @@ Again, these resonant frequencies only occour at certain wavelengths. The formul
 \vspace{5pt}
 
 \hspace{-20pt}
-\begin{minipage}{0.32\textwidth} %Diagram 6
+\begin{minipage}{0.32\textwidth} % Diagram 6
 	\fcolorbox{\rbcolor}{\rbocolor}{\begin{tikzpicture}[yscale=\scalecontrol, xscale={(16.5726/1.407)/(abs(\dwidth)+\rcirc)}]
 			\clip (\dwidth,-\dheight) rectangle (\rcirc*1.56,\dheight);
 			% Draw the concave mirror
@@ -1203,35 +1089,25 @@ Again, these resonant frequencies only occour at certain wavelengths. The formul
 			\newcommand{\imaged}{20}
 			\newcommand{\height}{1.2}
 
-
 			\draw[line width=\imagethickness, \imagecolor] (33.3333,2) -- (33.333,0);
 			% Draw Object
 			\draw [ultra thick] (\imaged,0) -- (\imaged,\height);
 			% Draw the central axis
 			\draw[dashed] (\rayqx,0) -- (\rlength+15,0);
 
-
-
 			\newcommand{\parline}[2]{ % #1 represents the value for \rayqy, #2 for shade number
 			\draw[thick] ({\rlength-(\rcirc-(\rcirc*cos((\circdeg))))},{0-(((sin(\circdeg))*\rcirc))}) arc (-\circdeg:\circdeg:\rcirc);
-
 
 			\draw[color=p#2] (\imaged,#1) -- ({\rlength- (\rcirc- ( ( ((\rcirc)^2) - ((#1)^2) )^(0.5) ))},#1);
 
 			\draw[-{stealth},color=p#2] ({\rlength-(\rcirc- ( ( ((\rcirc)^2) - ((#1)^2) )^(0.5) ))},#1) -- (\rayqx,{( \rayqx-(\rlength/2))*(#1/( (\rlength/2)-(\rcirc- ( ( ((\rcirc)^2) - ((#1)^2) )^(0.5) ))   )});}
 
-
-
 			\newcommand{\drawLinez}[2]{ % #1 represents the value for \rayqy, #2 for shade number
 			\draw[p#2] (\imaged,#1) -- (\rlength,0);
 			\draw[p#2,-{stealth}] (\rlength,0) -- (\rayqx, {(0+ (\rayqx-\rlength)*( (#1) / ((\rlength-\imaged)   )  }  );}
 
-
 			\newcommand{\drawLinezz}[2]{ % #1 represents the value for \rayqy, #2 for shade number
 				\draw [{stealth}-,p#2] (\rayqx, {0+(\rayqx * ( (#1)/(\imaged) ))}) -- ({\rcirc*( cos(atan((#1)/ (\imaged)))) }, {( ((\rcirc)^2) - ((\rcirc*( cos(atan((#1)/ (\imaged)))) )^2) )^(1/2) });}
-
-
-
 
 			\newcommand{\drawRayThroughF}[2]{ % #1 represents the value for \rayqy
 				% Define point F
@@ -1272,10 +1148,7 @@ Again, these resonant frequencies only occour at certain wavelengths. The formul
 				\draw[p#2, thick] (4.9+\xTop, 0.8+\yTop) -- (-10, 0.8+\yTop);
 				\draw[pag!60, dashed] (12.5, 0) -- (20, 1.2);
 
-
 			}
-
-
 
 			\parline{\height}{1\newcolord}
 			\drawLinez{\height}{3\newcolord}
@@ -1288,17 +1161,14 @@ Again, these resonant frequencies only occour at certain wavelengths. The formul
 			% Mark the center point (center of the mirror)
 			\filldraw (0,0) circle (1.5pt) node[below] {\small C};
 
-
 			\clip (25,0) rectangle (35,4);
 			\draw [thin, dashed,pag!75] (0,0) -- (33.3333,2);
 			\draw [thin, dashed,pag!75] (12.5,0) -- (33.333,2);
 			\draw [thin, dashed,pag!75] (25,2) -- (33.333,2);
 			\draw [thin, dashed,pag!75] (25,0) -- (33.333,2);
 
-
 		\end{tikzpicture}}
 \end{minipage}
-%END_FOLD
 
 \vspace{20pt}
 \noindent \textbf{Convex Ray Diagrams} - Convex Mirrors are relatively simple. The closer to the mirror, the larger the image. The image is always virtual, and the focus point is negative. The distance to the mirror from the object is always the positive value
@@ -1307,7 +1177,7 @@ Again, these resonant frequencies only occour at certain wavelengths. The formul
 \newcommand{\offsetdiagram}{22}
 \newcommand{\rightscale}{0.9}
 \vspace{5pt}
-\hspace{-16.5pt}\begin{minipage}{0.32\textwidth} %Diagram 6
+\hspace{-16.5pt}\begin{minipage}{0.32\textwidth} % Diagram 6
 	\fcolorbox{\rbcolor}{\rbocolor}{\begin{tikzpicture}[yscale=\scalecontrol, xscale={(16.5726/2.98)/(abs(\dwidth)+\rcirc)}]
 			\clip (\dwidth+\offsetdiagram,-\dheight) rectangle (\rcirc*\rightscale+\offsetdiagram,\dheight);
 			% Draw the concave mirror
@@ -1319,40 +1189,37 @@ Again, these resonant frequencies only occour at certain wavelengths. The formul
 			\newcommand{\raydis}{90}
 			\newcommand{\dashedlinecolor}{pag!75}
 
-
-
 			% Draw the central axis
 			\draw[dashed] (\rayqx,0) -- (\rlength+40,0);
 
 			\draw[thick] ({\rlength-(\rcirc-(\rcirc*cos((\circdeg))))},{0-(((sin(\circdeg))*\rcirc))}) arc (-\circdeg:\circdeg:\rcirc);
 
-
 			\newcommand{\convexobject}[2]{
 				\newcommand{\imaged}{#1}
 
-				%Object
+				% Object
 				\draw [ultra thick] (\imaged,0) -- (\imaged,\height);
 
-				%Ray1
+				% Ray1
 				\draw[p2!#2!pag] (\imaged,\height) -- (\rcirc,\height);
 				\draw[p2!#2!pag] (\rcirc,\height) -- (\raydis,{(\raydis-(\rcirc*0.5))*(\height/(\rcirc*0.5)) });
 				\draw [dashed, thin, pag!75] ({\rcirc + (( (1/(-\rcirc*0.5 )) - (1/(\imaged-\rcirc))  )^(-1) )}, {( -((( (1/(-\rcirc*0.5 )) - (1/(\imaged-\rcirc))  )^(-1) )) / (\imaged-\rcirc)   )*\height}) -- (\rcirc,\height);
 
-				%Ray2
+				% Ray2
 				\draw[p4!#2!pag] (\rcirc, { \rcirc*(\height/\imaged ) } ) -- (\raydis, {\raydis*(\height/\imaged )});
 				\draw[dashed, pag!75] ({\rcirc + (( (1/(-\rcirc*0.5 )) - (1/(\imaged-\rcirc))  )^(-1) )}, {( -((( (1/(-\rcirc*0.5 )) - (1/(\imaged-\rcirc))  )^(-1) )) / (\imaged-\rcirc)   )*\height}) -- (\rcirc, { \rcirc*(\height/\imaged ) } );
 
-				%Ray3
+				% Ray3
 				\draw[p6!#2!pag] (\rcirc, { (\rcirc/2)*(\height/ (\imaged-(\rcirc/2) } ) -- (\imaged, \height);
 				\draw[p6!#2!pag] (\rcirc, { (\rcirc/2)*(\height/ (\imaged-(\rcirc/2) } ) -- (\raydis, { (\rcirc/2)*(\height/ (\imaged-(\rcirc/2) } );
 				\draw[dashed, pag!75,thin] ({\rcirc + (( (1/(-\rcirc*0.5 )) - (1/(\imaged-\rcirc))  )^(-1) )}, {( -((( (1/(-\rcirc*0.5 )) - (1/(\imaged-\rcirc))  )^(-1) )) / (\imaged-\rcirc)   )*\height}) -- (\rcirc, { (\rcirc/2)*(\height/ (\imaged-(\rcirc/2) } )(\rcirc, { (\rcirc/2)*(\height/ (\imaged-(\rcirc/2) } );
 
-				%Ray4
+				% Ray4
 				\draw[p8!#2!pag] (\imaged,\height) -- (\rcirc, 0);
 				\draw[p8!#2!pag] (\rcirc,0) -- (\raydis, {(\raydis-\rcirc)* ( (-\height)/(\imaged-\rcirc) ) });
 				\draw[dashed, pag!75,thin]	(\rcirc, 0) -- ({\rcirc + (( (1/(-\rcirc*0.5 )) - (1/(\imaged-\rcirc))  )^(-1) )}, {( -((( (1/(-\rcirc*0.5 )) - (1/(\imaged-\rcirc))  )^(-1) )) / (\imaged-\rcirc)   )*\height});
 
-				%Image
+				% Image
 				\draw[line width=\imagethickness, \imagecolor] ({\rcirc + (( (1/(-\rcirc*0.5 )) - (1/(\imaged-\rcirc))  )^(-1) )} ,0) -- ({\rcirc + (( (1/(-\rcirc*0.5 )) - (1/(\imaged-\rcirc))  )^(-1) )}, {( -((( (1/(-\rcirc*0.5 )) - (1/(\imaged-\rcirc))  )^(-1) )) / (\imaged-\rcirc)   )*\height});
 			}
 
@@ -1364,12 +1231,9 @@ Again, these resonant frequencies only occour at certain wavelengths. The formul
 			% Mark the center point (center of the mirror)
 			\filldraw (0,0) circle (1.5pt) node[below] {\small C};
 
-
-
-
 		\end{tikzpicture}}
 \end{minipage}
-\hspace{\trispacing}\begin{minipage}{0.32\textwidth} %Diagram 6
+\hspace{\trispacing}\begin{minipage}{0.32\textwidth} % Diagram 6
 	\fcolorbox{\rbcolor}{\rbocolor}{\begin{tikzpicture}[yscale=\scalecontrol, xscale={(16.5726/2.98)/(abs(\dwidth)+\rcirc)}]
 			\clip (\dwidth+\offsetdiagram,-\dheight) rectangle (\rcirc*\rightscale+\offsetdiagram,\dheight);
 			% Draw the concave mirror
@@ -1381,40 +1245,37 @@ Again, these resonant frequencies only occour at certain wavelengths. The formul
 			\newcommand{\raydis}{90}
 			\newcommand{\dashedlinecolor}{pag!75}
 
-
-
 			% Draw the central axis
 			\draw[dashed] (\rayqx,0) -- (\rlength+40,0);
 
 			\draw[thick] ({\rlength-(\rcirc-(\rcirc*cos((\circdeg))))},{0-(((sin(\circdeg))*\rcirc))}) arc (-\circdeg:\circdeg:\rcirc);
 
-
 			\newcommand{\convexobject}[2]{
 				\newcommand{\imaged}{#1}
 
-				%Object
+				% Object
 				\draw [ultra thick] (\imaged,0) -- (\imaged,\height);
 
-				%Ray1
+				% Ray1
 				\draw[p2!#2!pag] (\imaged,\height) -- (\rcirc,\height);
 				\draw[p2!#2!pag] (\rcirc,\height) -- (\raydis,{(\raydis-(\rcirc*0.5))*(\height/(\rcirc*0.5)) });
 				\draw [dashed, thin, pag!75] ({\rcirc + (( (1/(-\rcirc*0.5 )) - (1/(\imaged-\rcirc))  )^(-1) )}, {( -((( (1/(-\rcirc*0.5 )) - (1/(\imaged-\rcirc))  )^(-1) )) / (\imaged-\rcirc)   )*\height}) -- (\rcirc,\height);
 
-				%Ray2
+				% Ray2
 				\draw[p4!#2!pag] (\rcirc, { \rcirc*(\height/\imaged ) } ) -- (\raydis, {\raydis*(\height/\imaged )});
 				\draw[dashed, pag!75] ({\rcirc + (( (1/(-\rcirc*0.5 )) - (1/(\imaged-\rcirc))  )^(-1) )}, {( -((( (1/(-\rcirc*0.5 )) - (1/(\imaged-\rcirc))  )^(-1) )) / (\imaged-\rcirc)   )*\height}) -- (\rcirc, { \rcirc*(\height/\imaged ) } );
 
-				%Ray3
+				% Ray3
 				\draw[p6!#2!pag] (\rcirc, { (\rcirc/2)*(\height/ (\imaged-(\rcirc/2) } ) -- (\imaged, \height);
 				\draw[p6!#2!pag] (\rcirc, { (\rcirc/2)*(\height/ (\imaged-(\rcirc/2) } ) -- (\raydis, { (\rcirc/2)*(\height/ (\imaged-(\rcirc/2) } );
 				\draw[dashed, pag!75,thin] ({\rcirc + (( (1/(-\rcirc*0.5 )) - (1/(\imaged-\rcirc))  )^(-1) )}, {( -((( (1/(-\rcirc*0.5 )) - (1/(\imaged-\rcirc))  )^(-1) )) / (\imaged-\rcirc)   )*\height}) -- (\rcirc, { (\rcirc/2)*(\height/ (\imaged-(\rcirc/2) } )(\rcirc, { (\rcirc/2)*(\height/ (\imaged-(\rcirc/2) } );
 
-				%Ray4
+				% Ray4
 				\draw[p8!#2!pag] (\imaged,\height) -- (\rcirc, 0);
 				\draw[p8!#2!pag] (\rcirc,0) -- (\raydis, {(\raydis-\rcirc)* ( (-\height)/(\imaged-\rcirc) ) });
 				\draw[dashed, pag!75,thin]	(\rcirc, 0) -- ({\rcirc + (( (1/(-\rcirc*0.5 )) - (1/(\imaged-\rcirc))  )^(-1) )}, {( -((( (1/(-\rcirc*0.5 )) - (1/(\imaged-\rcirc))  )^(-1) )) / (\imaged-\rcirc)   )*\height});
 
-				%Image
+				% Image
 				\draw[line width=\imagethickness, \imagecolor] ({\rcirc + (( (1/(-\rcirc*0.5 )) - (1/(\imaged-\rcirc))  )^(-1) )} ,0) -- ({\rcirc + (( (1/(-\rcirc*0.5 )) - (1/(\imaged-\rcirc))  )^(-1) )}, {( -((( (1/(-\rcirc*0.5 )) - (1/(\imaged-\rcirc))  )^(-1) )) / (\imaged-\rcirc)   )*\height});
 			}
 
@@ -1426,12 +1287,9 @@ Again, these resonant frequencies only occour at certain wavelengths. The formul
 			% Mark the center point (center of the mirror)
 			\filldraw (0,0) circle (1.5pt) node[below] {\small C};
 
-
-
-
 		\end{tikzpicture}}
 \end{minipage}
-\hspace{\trispacing}\begin{minipage}{0.32\textwidth} %Diagram 6
+\hspace{\trispacing}\begin{minipage}{0.32\textwidth} % Diagram 6
 	\fcolorbox{\rbcolor}{\rbocolor}{\begin{tikzpicture}[yscale=\scalecontrol, xscale={(16.5726/2.98)/(abs(\dwidth)+\rcirc)}]
 			\clip (\dwidth+\offsetdiagram,-\dheight) rectangle (\rcirc*\rightscale+\offsetdiagram,\dheight);
 			% Draw the concave mirror
@@ -1443,40 +1301,37 @@ Again, these resonant frequencies only occour at certain wavelengths. The formul
 			\newcommand{\raydis}{90}
 			\newcommand{\dashedlinecolor}{pag!75}
 
-
-
 			% Draw the central axis
 			\draw[dashed] (\rayqx,0) -- (\rlength+40,0);
 
 			\draw[thick] ({\rlength-(\rcirc-(\rcirc*cos((\circdeg))))},{0-(((sin(\circdeg))*\rcirc))}) arc (-\circdeg:\circdeg:\rcirc);
 
-
 			\newcommand{\convexobject}[2]{
 				\newcommand{\imaged}{#1}
 
-				%Object
+				% Object
 				\draw [ultra thick] (\imaged,0) -- (\imaged,\height);
 
-				%Ray1
+				% Ray1
 				\draw[p2!#2!pag] (\imaged,\height) -- (\rcirc,\height);
 				\draw[p2!#2!pag] (\rcirc,\height) -- (\raydis,{(\raydis-(\rcirc*0.5))*(\height/(\rcirc*0.5)) });
 				\draw [dashed, thin, pag!75] ({\rcirc + (( (1/(-\rcirc*0.5 )) - (1/(\imaged-\rcirc))  )^(-1) )}, {( -((( (1/(-\rcirc*0.5 )) - (1/(\imaged-\rcirc))  )^(-1) )) / (\imaged-\rcirc)   )*\height}) -- (\rcirc,\height);
 
-				%Ray2
+				% Ray2
 				\draw[p4!#2!pag] (\rcirc, { \rcirc*(\height/\imaged ) } ) -- (\raydis, {\raydis*(\height/\imaged )});
 				\draw[dashed, pag!75] ({\rcirc + (( (1/(-\rcirc*0.5 )) - (1/(\imaged-\rcirc))  )^(-1) )}, {( -((( (1/(-\rcirc*0.5 )) - (1/(\imaged-\rcirc))  )^(-1) )) / (\imaged-\rcirc)   )*\height}) -- (\rcirc, { \rcirc*(\height/\imaged ) } );
 
-				%Ray3
+				% Ray3
 				\draw[p6!#2!pag] (\rcirc, { (\rcirc/2)*(\height/ (\imaged-(\rcirc/2) } ) -- (\imaged, \height);
 				\draw[p6!#2!pag] (\rcirc, { (\rcirc/2)*(\height/ (\imaged-(\rcirc/2) } ) -- (\raydis, { (\rcirc/2)*(\height/ (\imaged-(\rcirc/2) } );
 				\draw[dashed, pag!75,thin] ({\rcirc + (( (1/(-\rcirc*0.5 )) - (1/(\imaged-\rcirc))  )^(-1) )}, {( -((( (1/(-\rcirc*0.5 )) - (1/(\imaged-\rcirc))  )^(-1) )) / (\imaged-\rcirc)   )*\height}) -- (\rcirc, { (\rcirc/2)*(\height/ (\imaged-(\rcirc/2) } )(\rcirc, { (\rcirc/2)*(\height/ (\imaged-(\rcirc/2) } );
 
-				%Ray4
+				% Ray4
 				\draw[p8!#2!pag] (\imaged,\height) -- (\rcirc, 0);
 				\draw[p8!#2!pag] (\rcirc,0) -- (\raydis, {(\raydis-\rcirc)* ( (-\height)/(\imaged-\rcirc) ) });
 				\draw[dashed, pag!75,thin]	(\rcirc, 0) -- ({\rcirc + (( (1/(-\rcirc*0.5 )) - (1/(\imaged-\rcirc))  )^(-1) )}, {( -((( (1/(-\rcirc*0.5 )) - (1/(\imaged-\rcirc))  )^(-1) )) / (\imaged-\rcirc)   )*\height});
 
-				%Image
+				% Image
 				\draw[line width=\imagethickness, \imagecolor] ({\rcirc + (( (1/(-\rcirc*0.5 )) - (1/(\imaged-\rcirc))  )^(-1) )} ,0) -- ({\rcirc + (( (1/(-\rcirc*0.5 )) - (1/(\imaged-\rcirc))  )^(-1) )}, {( -((( (1/(-\rcirc*0.5 )) - (1/(\imaged-\rcirc))  )^(-1) )) / (\imaged-\rcirc)   )*\height});
 			}
 
@@ -1488,9 +1343,6 @@ Again, these resonant frequencies only occour at certain wavelengths. The formul
 			% Mark the center point (center of the mirror)
 			\filldraw (0,0) circle (1.5pt) node[below] {\small C};
 
-
-
-
 		\end{tikzpicture}}
 \end{minipage}
 
@@ -1499,7 +1351,7 @@ Again, these resonant frequencies only occour at certain wavelengths. The formul
 
 \vspace{10pt}
 \hspace{-20pt}
-\begin{minipage}{0.32\textwidth} %Diagram 6
+\begin{minipage}{0.32\textwidth} % Diagram 6
 	\fcolorbox{\rbcolor}{\rbocolor}{\begin{tikzpicture}[yscale=\scalecontrol*0.8, xscale={(16.5726/1.407)/(abs(\dwidth)+\rcirc)}]
 			\clip (\dwidth,-\dheight) rectangle (\rcirc*1.56,\dheight);
 			% Draw the concave mirror
@@ -1510,35 +1362,25 @@ Again, these resonant frequencies only occour at certain wavelengths. The formul
 			\newcommand{\height}{1.2}
 			\newcommand{\diffuseray}{!15!pag}
 
-
 			\draw[line width=\imagethickness, \imagecolor] (33.3333,2) -- (33.333,0);
 			% Draw Object
 			\draw [ultra thick] (\imaged,0) -- (\imaged,\height);
 			% Draw the central axis
 			\draw[dashed] (\rayqx,0) -- (\rlength+15,0);
 
-
-
 			\newcommand{\parline}[2]{ % #1 represents the value for \rayqy, #2 for shade number
 			\draw[thick] ({\rlength-(\rcirc-(\rcirc*cos((\circdeg))))},{0-(((sin(\circdeg))*\rcirc))}) arc (-\circdeg:\circdeg:\rcirc);
-
 
 			\draw[color=p#2\diffuseray] (\imaged,#1) -- ({\rlength- (\rcirc- ( ( ((\rcirc)^2) - ((#1)^2) )^(0.5) ))},#1);
 
 			\draw[-{stealth},color=p#2\diffuseray] ({\rlength-(\rcirc- ( ( ((\rcirc)^2) - ((#1)^2) )^(0.5) ))},#1) -- (\rayqx,{( \rayqx-(\rlength/2))*(#1/( (\rlength/2)-(\rcirc- ( ( ((\rcirc)^2) - ((#1)^2) )^(0.5) ))   )});}
 
-
-
 			\newcommand{\drawLinez}[2]{ % #1 represents the value for \rayqy, #2 for shade number
 			\draw[p#2\diffuseray] (\imaged,#1) -- (\rlength,0);
 			\draw[p#2\diffuseray,-{stealth}] (\rlength,0) -- (\rayqx, {(0+ (\rayqx-\rlength)*( (#1) / ((\rlength-\imaged)   )  }  );}
 
-
 			\newcommand{\drawLinezz}[2]{ % #1 represents the value for \rayqy, #2 for shade number
 				\draw [{stealth}-,p#2\diffuseray] (\rayqx, {0+(\rayqx * ( (#1)/(\imaged) ))}) -- ({\rcirc*( cos(atan((#1)/ (\imaged)))) }, {( ((\rcirc)^2) - ((\rcirc*( cos(atan((#1)/ (\imaged)))) )^2) )^(1/2) });}
-
-
-
 
 			\newcommand{\drawRayThroughF}[2]{ % #1 represents the value for \rayqy
 				% Define point F
@@ -1579,10 +1421,7 @@ Again, these resonant frequencies only occour at certain wavelengths. The formul
 				\draw[p#2\diffuseray, thick] (4.9+\xTop, 0.8+\yTop) -- (-10, 0.8+\yTop);
 				\draw[pag!60, dashed] (12.5, 0) -- (20, 1.2);
 
-
 			}
-
-
 
 			\parline{\height}{1\newcolord}
 			\drawLinez{\height}{3\newcolord}
@@ -1613,7 +1452,6 @@ Again, these resonant frequencies only occour at certain wavelengths. The formul
 			\draw [thin, dashed,pag!75] (12.5,0) -- (33.333,2);
 			\draw [thin, dashed,pag!75] (25,2) -- (33.333,2);
 			\draw [thin, dashed,pag!75] (25,0) -- (33.333,2);
-
 
 		\end{tikzpicture}}
 \end{minipage}
@@ -1648,11 +1486,9 @@ Again, these resonant frequencies only occour at certain wavelengths. The formul
 			\draw[pag!50] (0,0.5) arc (90:130:0.44);
 			\draw[pag!50] (0,-0.94) arc (270:310:0.44);
 
-
 			\draw[p4,thick] (-1,1.5) -- (0,0);
 
 			\draw[p4,thick, {stealth}-] (0.5,-1.5) -- (0,0);
-
 
 			\draw[thick, dashed] (0,1.5) -- (0,-1.5);
 			\node at (-0.15,0.63) {\tiny$\theta_1$};
@@ -1660,12 +1496,10 @@ Again, these resonant frequencies only occour at certain wavelengths. The formul
 			\node at (-1.2,0.5) {\tiny Incident Ray};
 			\node at (1,-0.5) {\tiny Refracted Ray};
 
-
 			\draw[ultra thick, pag!50] (-1.5,0) -- (1.5,0);
 		\end{tikzpicture}
 
 	\end{minipage}
-
 
 \end{figure}
 \vspace{10pt}
@@ -1715,17 +1549,14 @@ Again, these resonant frequencies only occour at certain wavelengths. The formul
 			\draw[pag!50] (0,0.5) arc (90:130:0.44);
 			\draw[pag!50] (0,-0.44) arc (270:360:0.44);
 
-
 			\draw[p4,thick] (-1,1.5) -- (0,0);
 
 			\draw[p4,thick, {stealth}-] (1,1.5) -- (0,0);
-
 
 			\draw[thick, dashed] (0,1.5) -- (0,-1.5);
 			\node at (-0.15,0.63) {\tiny$\theta_1$};
 			\node at (0.8,-0.5) {\tiny$\theta_2>90^{\circ}$};
 			\node at (-1,0.5) {\tiny Incident};
-
 
 			\draw[ultra thick, pag!50] (-1.5,0) -- (1.5,0);
 		\end{tikzpicture}
@@ -1750,7 +1581,6 @@ Again, these resonant frequencies only occour at certain wavelengths. The formul
 		\hspace{5pt}	\begin{tikzpicture}
 			\fill[p6!20!pag] (-2,0) rectangle (2, -1.5);
 
-
 			\draw[ultra thick, pag!50] (-2,0) -- (2,0);
 
 			\coordinate (wow) at (0,-1.5);
@@ -1771,7 +1601,6 @@ Again, these resonant frequencies only occour at certain wavelengths. The formul
 
 			\draw [p4, -{stealth}] (wow) -- (-1.6,0) -- (-3.2,-1.5);
 
-
 			\draw [p4, -{stealth}] (0,-1.5) -- (0,1.5);
 			\draw[p4, -{stealth}] (wow) -- (0.25,0) -- (0.8,1.5);
 			\draw[p4, opacity=0.05, -{stealth}] (0.25,0) -- (0.5,-1.5);
@@ -1791,14 +1620,12 @@ Again, these resonant frequencies only occour at certain wavelengths. The formul
 
 	\end{minipage}
 
-
 \end{figure}
 \vspace{10pt}
 
 \begin{figure}[h]
 	\begin{minipage}{0.62\textwidth}
 		\textbf{Converging Lenses} - In converging lenses, the lenses is two convex mirrors put side by side. When a ray of light passes through a concave lens parallel to the central axis, the ray is reflected through the focus, which is positive, but on the opposite side of the incident ray. \\
-
 
 	\end{minipage}
 	\begin{minipage}{0.1\textwidth}
@@ -1818,8 +1645,7 @@ Again, these resonant frequencies only occour at certain wavelengths. The formul
 				\fill (\rfocus,0) circle (1.5pt);
 				\node at (\lfocus,-0.7) {$f$};
 
-				%Axis Lines
-
+				% Axis Lines
 
 				% Define lens parameters
 				\def\lensRadius{20} % radius of the lens
@@ -1829,10 +1655,8 @@ Again, these resonant frequencies only occour at certain wavelengths. The formul
 				\def\startAngle{asin(\lensHeight/\lensRadius)}
 				\def\endAngle{180-\startAngle}
 
-
 				\fill[p4!15!pag] (0,\lensHeight) arc[start angle=\startAngle, end angle=-\startAngle, radius=\lensRadius] --
 				(0,\lensHeight) arc[start angle=180-\startAngle, end angle=180+\startAngle, radius=\lensRadius] -- cycle;
-
 
 				% Draw the two arcs for the lens
 				\draw[pag!50] (0,\lensHeight) arc[start angle=\startAngle, end angle=-\startAngle, radius=\lensRadius];
@@ -1850,7 +1674,6 @@ Again, these resonant frequencies only occour at certain wavelengths. The formul
 					\global\let\currentslope\pgfmathresult % Store the result globally
 				}
 
-
 				\newcommand{\drawray}[2]{
 
 					\newcommand{\oheight}{#1}
@@ -1860,11 +1683,8 @@ Again, these resonant frequencies only occour at certain wavelengths. The formul
 					\coordinate (image) at (-\xValue, \yValue);
 					\coordinate (object) at (\odistance, \oheight);
 
-
 					\findslope{\odistance}{\oheight}
 					\let\focusslope\currentslope % Copy the value to \slopeA
-
-
 
 					\draw[p#2,{stealth}-] (\odistance,\oheight) -- (0,{\oheight -((\odistance)*(\focusslope))});
 					\draw[p#2,{stealth}-] (\odistance,\oheight) -- (0,{\oheight -((\odistance)*(\focusslope))});
@@ -1882,7 +1702,6 @@ Again, these resonant frequencies only occour at certain wavelengths. The formul
 						\addtocounter{shadeCounterb}{1} % Increment the counter by 2 for the next shade
 					}
 
-
 				\fill (\lfocus,0) circle (2pt);
 			\end{scope}
 
@@ -1890,13 +1709,11 @@ Again, these resonant frequencies only occour at certain wavelengths. The formul
 
 	\end{minipage}
 
-
 \end{figure}
 \vspace{10pt}
 
 \hspace{-15pt}\begin{minipage}{0.62\textwidth}
 	\textbf{Diverging Lenses} - Diverging lenses are very similar, except a incident ray parallel to the central axis will refract along the line made between the focus, the point the ray enters the mirror. The focus in this case is negative, as it is virtual. \\
-
 
 \end{minipage}
 \begin{minipage}{0.1\textwidth}
@@ -1917,8 +1734,7 @@ Again, these resonant frequencies only occour at certain wavelengths. The formul
 			\fill (\rfocus,0) circle (1.5pt);
 			\node at (\lfocus,-0.7) {$f$};
 
-			%Axis Lines
-
+			% Axis Lines
 
 			% Define lens parameters
 			\def\lensRadius{2.502} % radius of the arcs forming the lens
@@ -1938,17 +1754,10 @@ Again, these resonant frequencies only occour at certain wavelengths. The formul
 			-- cycle;
 			\draw[dashed] (-4.5,0) -- (4,0);
 
-
-
-
-
-
 			\newcommand{\drawray}[2]{
 
 			\draw [pag!60, dashed, thin] (\lfocus, 0) -- (0,#1);
 			\draw[p#2,-{stealth}] (\odistance,#1) -- (0,#1) -- (\wellhere, {#1+(\wellhere*(-#1/\lfocus))});
-
-
 
 			}
 
@@ -1959,7 +1768,6 @@ Again, these resonant frequencies only occour at certain wavelengths. The formul
 					\drawray{\abc}{\theshadeCounterc} % Use the current value of the counter for the shade
 					\addtocounter{shadeCounterc}{1} % Increment the counter by 2 for the next shade
 				}
-
 
 		\end{scope}
 
@@ -1991,11 +1799,10 @@ Again, these resonant frequencies only occour at certain wavelengths. The formul
 			\fill (\rfocus,0) circle (1.5pt) node[below] {\small$f$};
 			\fill (2*\lfocus,0) circle (1.5pt) node[below] {\textcolor{pag!40}{\tiny$2f$}};
 			\fill (2*\rfocus,0) circle (1.5pt) node[below] {\textcolor{pag!40}{\tiny$2f$}};
-			%Axis Lines
+			% Axis Lines
 
-			%Axis Lines
+			% Axis Lines
 			\draw[opacity=0] (-\convwidth,-\convheight) rectangle (\convwidth,\convheight);
-
 
 			% Define lens parameters
 			\def\lensRadius{20} % radius of the lens
@@ -2008,17 +1815,11 @@ Again, these resonant frequencies only occour at certain wavelengths. The formul
 			\fill[p4!15!pag] (0,\lensHeight) arc[start angle=\startAngle, end angle=-\startAngle, radius=\lensRadius] --
 			(0,\lensHeight) arc[start angle=180-\startAngle, end angle=180+\startAngle, radius=\lensRadius] -- cycle;
 
-
 			% Draw the two arcs for the lens
 			\draw[pag!50] (0,\lensHeight) arc[start angle=\startAngle, end angle=-\startAngle, radius=\lensRadius];
 			\draw [pag!50] (0,\lensHeight) arc[start angle=180-\startAngle, end angle=180+\startAngle, radius=\lensRadius];
 
 			\draw [dashed] (-8,0) -- (8,0);
-
-
-
-
-
 
 			\pgfmathsetmacro{\xValue}{((1/\lfocus)-(1/\odistance))^(-1)}
 			\pgfmathsetmacro{\yValue}{(-\xValue*\oheight)/\odistance}
@@ -2040,22 +1841,15 @@ Again, these resonant frequencies only occour at certain wavelengths. The formul
 			\draw [ultra thick, pag!40] (\odistance, 0) -- (object);
 			\draw [ultra thick, pag!80] (-\xValue,0) -- (image);
 
-
 			\draw[p3] (object) -- (0,{\oheight -((\odistance)*(\focusslope))});
 			\draw[p3] (0,{\oheight -((\odistance)*(\focusslope))}) -- (image);
 
 			\draw[p4] (object) -- (0,\oheight);
 			\draw[p4] (0,\oheight) -- (image);
 
-
 			\fill (image) circle (2pt);
 
-
-
-
 			\draw[p7] (object) -- (image);
-
-
 
 		\end{scope}
 
@@ -2073,12 +1867,11 @@ Again, these resonant frequencies only occour at certain wavelengths. The formul
 			\fill (\rfocus,0) circle (1.5pt) node[below] {\small$f$};
 			\fill (2*\lfocus,0) circle (1.5pt) node[below] {\textcolor{pag!40}{\tiny$2f$}};
 			\fill (2*\rfocus,0) circle (1.5pt) node[below] {\textcolor{pag!40}{\tiny$2f$}};
-			%Axis Lines
+			% Axis Lines
 
-			%Axis Lines
+			% Axis Lines
 			\draw[opacity=0] (-\convwidth,-\convheight) rectangle (\convwidth,\convheight);
 			\draw [dashed] (-8,0) -- (8,0);
-
 
 			% Define lens parameters
 			\def\lensRadius{20} % radius of the lens
@@ -2088,21 +1881,14 @@ Again, these resonant frequencies only occour at certain wavelengths. The formul
 			\def\startAngle{asin(\lensHeight/\lensRadius)}
 			\def\endAngle{180-\startAngle}
 
-
 			\fill[p4!15!pag] (0,\lensHeight) arc[start angle=\startAngle, end angle=-\startAngle, radius=\lensRadius] --
 			(0,\lensHeight) arc[start angle=180-\startAngle, end angle=180+\startAngle, radius=\lensRadius] -- cycle;
-
 
 			% Draw the two arcs for the lens
 			\draw[pag!50] (0,\lensHeight) arc[start angle=\startAngle, end angle=-\startAngle, radius=\lensRadius];
 			\draw [pag!50] (0,\lensHeight) arc[start angle=180-\startAngle, end angle=180+\startAngle, radius=\lensRadius];
 
 			\draw [dashed] (-8,0) -- (8,0);
-
-
-
-
-
 
 			\pgfmathsetmacro{\xValue}{((1/\lfocus)-(1/\odistance))^(-1)}
 			\pgfmathsetmacro{\yValue}{(-\xValue*\oheight)/\odistance}
@@ -2124,21 +1910,15 @@ Again, these resonant frequencies only occour at certain wavelengths. The formul
 			\draw [ultra thick, pag!40] (\odistance, 0) -- (object);
 			\draw [ultra thick, pag!80] (-\xValue,0) -- (image);
 
-
 			\draw[p3] (object) -- (0,{\oheight -((\odistance)*(\focusslope))});
 			\draw[p3] (0,{\oheight -((\odistance)*(\focusslope))}) -- (image);
 
 			\draw[p4] (object) -- (0,\oheight);
 			\draw[p4] (0,\oheight) -- (image);
 
-
 			\fill (image) circle (2pt);
 
-
-
-
 			\draw[p7] (object) -- (image);
-
 
 		\end{scope}
 
@@ -2158,10 +1938,9 @@ Again, these resonant frequencies only occour at certain wavelengths. The formul
 			\fill (\rfocus,0) circle (1.5pt) node[below] {\small$f$};
 			\fill (2*\lfocus,0) circle (1.5pt) node[below] {\textcolor{pag!40}{\tiny$2f$}};
 			\fill (2*\rfocus,0) circle (1.5pt) node[below] {\textcolor{pag!40}{\tiny$2f$}};
-			%Axis Lines
-			%Axis Lines
+			% Axis Lines
+			% Axis Lines
 			\draw[opacity=0] (-\convwidth,-\convheight) rectangle (\convwidth,\convheight);
-
 
 			% Define lens parameters
 			\def\lensRadius{20} % radius of the lens
@@ -2174,17 +1953,11 @@ Again, these resonant frequencies only occour at certain wavelengths. The formul
 			\fill[p4!15!pag] (0,\lensHeight) arc[start angle=\startAngle, end angle=-\startAngle, radius=\lensRadius] --
 			(0,\lensHeight) arc[start angle=180-\startAngle, end angle=180+\startAngle, radius=\lensRadius] -- cycle;
 
-
 			% Draw the two arcs for the lens
 			\draw[pag!50] (0,\lensHeight) arc[start angle=\startAngle, end angle=-\startAngle, radius=\lensRadius];
 			\draw [pag!50] (0,\lensHeight) arc[start angle=180-\startAngle, end angle=180+\startAngle, radius=\lensRadius];
 
 			\draw [dashed] (-8,0) -- (8,0);
-
-
-
-
-
 
 			\pgfmathsetmacro{\xValue}{((1/\lfocus)-(1/\odistance))^(-1)}
 			\pgfmathsetmacro{\yValue}{(-\xValue*\oheight)/\odistance}
@@ -2206,22 +1979,15 @@ Again, these resonant frequencies only occour at certain wavelengths. The formul
 			\draw [ultra thick, pag!40] (\odistance, 0) -- (object);
 			\draw [ultra thick, pag!80] (-\xValue,0) -- (image);
 
-
 			\draw[p3] (object) -- (0,{\oheight -((\odistance)*(\focusslope))});
 			\draw[p3] (0,{\oheight -((\odistance)*(\focusslope))}) -- (image);
 
 			\draw[p4] (object) -- (0,\oheight);
 			\draw[p4] (0,\oheight) -- (image);
 
-
 			\fill (image) circle (2pt);
 
-
-
-
 			\draw[p7] (object) -- (image);
-
-
 
 		\end{scope}
 
@@ -2239,12 +2005,11 @@ Again, these resonant frequencies only occour at certain wavelengths. The formul
 			\fill (\rfocus,0) circle (1.5pt) node[below] {\small$f$};
 			\fill (2*\lfocus,0) circle (1.5pt) node[below] {\textcolor{pag!40}{\tiny$2f$}};
 			\fill (2*\rfocus,0) circle (1.5pt) node[below] {\textcolor{pag!40}{\tiny$2f$}};
-			%Axis Lines
+			% Axis Lines
 
-			%Axis Lines
+			% Axis Lines
 			\draw[opacity=0] (-\convwidth,-\convheight) rectangle (\convwidth,\convheight);
 			\draw [dashed] (-8,0) -- (8,0);
-
 
 			% Define lens parameters
 			\def\lensRadius{20} % radius of the lens
@@ -2254,10 +2019,7 @@ Again, these resonant frequencies only occour at certain wavelengths. The formul
 			\def\startAngle{asin(\lensHeight/\lensRadius)}
 			\def\endAngle{180-\startAngle}
 
-
-
 			\clip (-\convwidth,-\convheight) rectangle (\convwidth,\convheight);
-
 
 			\fill[p4!15!pag] (0,\lensHeight) arc[start angle=\startAngle, end angle=-\startAngle, radius=\lensRadius] --
 			(0,\lensHeight) arc[start angle=180-\startAngle, end angle=180+\startAngle, radius=\lensRadius] -- cycle;
@@ -2267,11 +2029,6 @@ Again, these resonant frequencies only occour at certain wavelengths. The formul
 			\draw [pag!50] (0,\lensHeight) arc[start angle=180-\startAngle, end angle=180+\startAngle, radius=\lensRadius];
 
 			\draw [dashed] (-8,0) -- (8,0);
-
-
-
-
-
 
 			\pgfmathsetmacro{\xValue}{((1/\lfocus)-(1/\odistance))^(-1)}
 			\pgfmathsetmacro{\yValue}{(-\xValue*\oheight)/\odistance}
@@ -2293,22 +2050,15 @@ Again, these resonant frequencies only occour at certain wavelengths. The formul
 			\draw [ultra thick, pag!40] (\odistance, 0) -- (object);
 			\draw [ultra thick, pag!80] (-\xValue,0) -- (image);
 
-
 			\draw[p3] (object) -- (0,{\oheight -((\odistance)*(\focusslope))});
 			\draw[p3] (0,{\oheight -((\odistance)*(\focusslope))}) -- (image);
 
 			\draw[p4] (object) -- (0,\oheight);
 			\draw[p4] (0,\oheight) -- (image);
 
-
 			\fill (image) circle (2pt);
 
-
-
-
 			\draw[p7] (object) -- (image);
-
-
 
 		\end{scope}
 
@@ -2328,12 +2078,11 @@ Again, these resonant frequencies only occour at certain wavelengths. The formul
 			\fill (\rfocus,0) circle (1.5pt) node[below] {\small$f$};
 			\fill (2*\lfocus,0) circle (1.5pt) node[below] {\textcolor{pag!40}{\tiny$2f$}};
 			\fill (2*\rfocus,0) circle (1.5pt) node[below] {\textcolor{pag!40}{\tiny$2f$}};
-			%Axis Lines
+			% Axis Lines
 
-			%Axis Lines
+			% Axis Lines
 			\draw[opacity=0] (-\convwidth,-\convheight) rectangle (\convwidth,\convheight);
 			\draw [dashed] (-8,0) -- (8,0);
-
 
 			% Define lens parameters
 			\def\lensRadius{20} % radius of the lens
@@ -2343,10 +2092,7 @@ Again, these resonant frequencies only occour at certain wavelengths. The formul
 			\def\startAngle{asin(\lensHeight/\lensRadius)}
 			\def\endAngle{180-\startAngle}
 
-
-
 			\clip (-\convwidth,-\convheight) rectangle (\convwidth,\convheight);
-
 
 			\fill[p4!15!pag] (0,\lensHeight) arc[start angle=\startAngle, end angle=-\startAngle, radius=\lensRadius] --
 			(0,\lensHeight) arc[start angle=180-\startAngle, end angle=180+\startAngle, radius=\lensRadius] -- cycle;
@@ -2356,11 +2102,6 @@ Again, these resonant frequencies only occour at certain wavelengths. The formul
 			\draw [pag!50] (0,\lensHeight) arc[start angle=180-\startAngle, end angle=180+\startAngle, radius=\lensRadius];
 
 			\draw [dashed] (-8,0) -- (8,0);
-
-
-
-
-
 
 			\pgfmathsetmacro{\xValue}{((1/\lfocus)-(1/\odistance))^(-1)}
 			\pgfmathsetmacro{\yValue}{(-\xValue*\oheight)/\odistance}
@@ -2382,7 +2123,6 @@ Again, these resonant frequencies only occour at certain wavelengths. The formul
 			\draw [ultra thick, pag!40] (\odistance, 0) -- (object);
 			\draw [ultra thick, pag!80] (-\xValue,0) -- (image);
 
-
 			\draw[p3] (object) -- (0,{\oheight -((\odistance)*(\focusslope))});
 			\draw[pag!60, thin, dashed] (0,{\oheight -((\odistance)*(\focusslope))}) -- (image);
 			\draw[p3, -{stealth}] (0,{\oheight -((\odistance)*(\focusslope))}) -- (\rfocus,{\oheight -((\odistance)*(\focusslope))});
@@ -2391,17 +2131,11 @@ Again, these resonant frequencies only occour at certain wavelengths. The formul
 			\draw[pag!60, thin, dashed] (0,\oheight) -- (image);
 			\draw[p4, -{stealth}] (0,\oheight) -- (\rfocus,0);
 
-
 			\fill (image) circle (2pt);
-
-
-
 
 			\draw[pag!60, thin, dashed] (object) -- (image);
 
 			\draw[p7, -{stealth}] (object) -- (\rfocus,{ (\odistance-(\odistance-\lfocus))*(-1*(\oheight/\odistance))});
-
-
 
 		\end{scope}
 
@@ -2419,12 +2153,11 @@ Again, these resonant frequencies only occour at certain wavelengths. The formul
 			\fill (\rfocus,0) circle (1.5pt) node[below] {\small$f$};
 			\fill (2*\lfocus,0) circle (1.5pt) node[below] {\textcolor{pag!40}{\tiny$2f$}};
 			\fill (2*\rfocus,0) circle (1.5pt) node[below] {\textcolor{pag!40}{\tiny$2f$}};
-			%Axis Lines
+			% Axis Lines
 
-			%Axis Lines
+			% Axis Lines
 			\draw[opacity=0] (-\convwidth,-\convheight) rectangle (\convwidth,\convheight);
 			\draw [dashed] (-8,0) -- (8,0);
-
 
 			% Define lens parameters
 			\def\lensRadius{20} % radius of the lens
@@ -2434,10 +2167,7 @@ Again, these resonant frequencies only occour at certain wavelengths. The formul
 			\def\startAngle{asin(\lensHeight/\lensRadius)}
 			\def\endAngle{180-\startAngle}
 
-
-
 			\clip (-\convwidth,-\convheight) rectangle (\convwidth,\convheight);
-
 
 			\fill[p4!15!pag] (0,\lensHeight) arc[start angle=\startAngle, end angle=-\startAngle, radius=\lensRadius] --
 			(0,\lensHeight) arc[start angle=180-\startAngle, end angle=180+\startAngle, radius=\lensRadius] -- cycle;
@@ -2447,11 +2177,6 @@ Again, these resonant frequencies only occour at certain wavelengths. The formul
 			\draw [pag!50] (0,\lensHeight) arc[start angle=180-\startAngle, end angle=180+\startAngle, radius=\lensRadius];
 
 			\draw [dashed] (-8,0) -- (8,0);
-
-
-
-
-
 
 			\pgfmathsetmacro{\xValue}{((1/\lfocus)-(1/\odistance))^(-1)}
 			\pgfmathsetmacro{\yValue}{(-\xValue*\oheight)/\odistance}
@@ -2473,7 +2198,6 @@ Again, these resonant frequencies only occour at certain wavelengths. The formul
 			\draw [ultra thick, pag!40] (\odistance, 0) -- (object);
 			\draw [ultra thick, pag!80] (-\xValue,0) -- (image);
 
-
 			\draw[p3] (object) -- (0,{\oheight -((\odistance)*(\focusslope))});
 			\draw[pag!60, thin, dashed] (0,{\oheight -((\odistance)*(\focusslope))}) -- (image);
 			\draw[p3, -{stealth}] (0,{\oheight -((\odistance)*(\focusslope))}) -- (\rfocus,{\oheight -((\odistance)*(\focusslope))});
@@ -2482,17 +2206,11 @@ Again, these resonant frequencies only occour at certain wavelengths. The formul
 			\draw[pag!60, thin, dashed] (0,\oheight) -- (image);
 			\draw[p4, -{stealth}] (0,\oheight) -- (\rfocus,0);
 
-
 			\fill (image) circle (2pt);
-
-
-
 
 			\draw[pag!60, thin, dashed] (object) -- (image);
 
 			\draw[p7, -{stealth}] (object) -- (\rfocus,{ (\odistance-(\odistance-\lfocus))*(-1*(\oheight/\odistance))});
-
-
 
 		\end{scope}
 
@@ -2512,21 +2230,16 @@ Again, these resonant frequencies only occour at certain wavelengths. The formul
 			\newcommand{\rfocus}{-2}
 			\newcommand{\wellhere}{-4}
 
-
 			\fill (\lfocus,0) circle (1.5pt) node[below] {\small$f$};
 			\fill (\rfocus,0) circle (1.5pt) node[below] {\small$f$};
 			\fill (2*\lfocus,0) circle (1.5pt) node[below] {\textcolor{pag!40}{\tiny$2f$}};
-			%Axis Lines
+			% Axis Lines
 
-			%Axis Lines
+			% Axis Lines
 			\draw[opacity=0] (-2,-\convheight) rectangle (\convwidth,\convheight);
 			\draw [dashed] (-2,0) -- (8,0);
 
-
-
-
 			\clip (-2,-\convheight) rectangle (\convwidth,\convheight);
-
 
 			% Define lens parameters
 			\def\lensRadius{2.502} % radius of the arcs forming the lens
@@ -2552,8 +2265,6 @@ Again, these resonant frequencies only occour at certain wavelengths. The formul
 
 			\draw [ultra thick, pag!40] (\odistance, 0) -- (object);
 			\draw [ultra thick, pag!80] (-\xValue,0) -- (image);
-
-
 
 			\draw [p2] (object) -- (0, \oheight) -- (\wellhere, {\wellhere*(-\oheight/\lfocus)} );
 			\draw[dashed, thin, pag!50] (image) -- (0, \oheight);
@@ -2576,21 +2287,16 @@ Again, these resonant frequencies only occour at certain wavelengths. The formul
 			\newcommand{\rfocus}{-2}
 			\newcommand{\wellhere}{-4}
 
-
 			\fill (\lfocus,0) circle (1.5pt) node[below] {\small$f$};
 			\fill (\rfocus,0) circle (1.5pt) node[below] {\small$f$};
 			\fill (2*\lfocus,0) circle (1.5pt) node[below] {\textcolor{pag!40}{\tiny$2f$}};
-			%Axis Lines
+			% Axis Lines
 
-			%Axis Lines
+			% Axis Lines
 			\draw[opacity=0] (-2,-\convheight) rectangle (\convwidth,\convheight);
 			\draw [dashed] (-2,0) -- (8,0);
 
-
-
-
 			\clip (-2,-\convheight) rectangle (\convwidth,\convheight);
-
 
 			% Define lens parameters
 			\def\lensRadius{2.502} % radius of the arcs forming the lens
@@ -2616,8 +2322,6 @@ Again, these resonant frequencies only occour at certain wavelengths. The formul
 
 			\draw [ultra thick, pag!40] (\odistance, 0) -- (object);
 			\draw [ultra thick, pag!80] (-\xValue,0) -- (image);
-
-
 
 			\draw [p2] (object) -- (0, \oheight) -- (\wellhere, {\wellhere*(-\oheight/\lfocus)} );
 			\draw[dashed, thin, pag!50] (image) -- (0, \oheight);
@@ -2640,21 +2344,16 @@ Again, these resonant frequencies only occour at certain wavelengths. The formul
 			\newcommand{\rfocus}{-2}
 			\newcommand{\wellhere}{-4}
 
-
 			\fill (\lfocus,0) circle (1.5pt) node[below] {\small$f$};
 			\fill (\rfocus,0) circle (1.5pt) node[below] {\small$f$};
 			\fill (2*\lfocus,0) circle (1.5pt) node[below] {\textcolor{pag!40}{\tiny$2f$}};
-			%Axis Lines
+			% Axis Lines
 
-			%Axis Lines
+			% Axis Lines
 			\draw[opacity=0] (-2,-\convheight) rectangle (\convwidth,\convheight);
 			\draw [dashed] (-2,0) -- (8,0);
 
-
-
-
 			\clip (-2,-\convheight) rectangle (\convwidth,\convheight);
-
 
 			% Define lens parameters
 			\def\lensRadius{2.502} % radius of the arcs forming the lens
@@ -2681,8 +2380,6 @@ Again, these resonant frequencies only occour at certain wavelengths. The formul
 			\draw [ultra thick, pag!40] (\odistance, 0) -- (object);
 			\draw [ultra thick, pag!80] (-\xValue,0) -- (image);
 
-
-
 			\draw [p2] (object) -- (0, \oheight) -- (\wellhere, {\wellhere*(-\oheight/\lfocus)} );
 			\draw[dashed, thin, pag!50] (image) -- (0, \oheight);
 
@@ -2703,20 +2400,7 @@ Again, these resonant frequencies only occour at certain wavelengths. The formul
 \\
 \textbf{Lens Maker Equation}
 
-
-
-
-
-
-
-
-
-
-
-
-
 \pagebreak
 16.5726 cm
-
 
 \end{document}

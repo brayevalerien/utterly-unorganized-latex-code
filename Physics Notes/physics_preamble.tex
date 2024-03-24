@@ -12,12 +12,12 @@
 \usepackage{tkz-euclide}
 \usepackage{ulem}
 
-% === Enable dark mode ===
-% Comment the line below to switch to light mode.
-% Note that some figures will keep a dark background, I might (!) fix this issue later.
+%  === Enable dark mode ===
+%  Comment the line below to switch to light mode.
+%  Note that some figures will keep a dark background, I might (!) fix this issue later.
 \enabledarkmode
 
-% === Define custom color ===
+%  === Define custom color ===
 \definecolor{myamber}{HTML}{ffc107}
 \definecolor{myblue}{HTML}{2196f3}
 \definecolor{mybluegray}{HTML}{607d8b}
@@ -48,7 +48,7 @@
 \definecolor{p9}{HTML}{03045e}
 \definecolor{pag}{HTML}{293133}
 
-% === Plot settings ===
+%  === Plot settings ===
 \pgfplotsset{compat=1.16}
 \usetikzlibrary{3d,backgrounds,intersections}
 \usetikzlibrary{arrows.meta}
@@ -72,12 +72,12 @@
 \usepgfplotslibrary{groupplots}
 \usepgfplotslibrary{groupplots}
 
-% === Fix broken canvas is xy plane at z option ===
-% for more information, see: https://tex.stackexchange.com/a/48776/121799
+%  === Fix broken canvas is xy plane at z option ===
+%  for more information, see: https://tex.stackexchange.com/a/48776/121799
 \makeatletter
-\tikzoption{canvas is xy plane at z}[]{%
-    \def\tikz@plane@origin{\pgfpointxyz{0}{0}{#1}}%
-    \def\tikz@plane@x{\pgfpointxyz{1}{0}{#1}}%
-    \def\tikz@plane@y{\pgfpointxyz{0}{1}{#1}}%
+\tikzoption{canvas is xy plane at z}[]{% 
+    \def\tikz@plane@origin{\pgfpointxyz{0}{0}{#1}}% 
+    \def\tikz@plane@x{\pgfpointxyz{1}{0}{#1}}% 
+    \def\tikz@plane@y{\pgfpointxyz{0}{1}{#1}}% 
     \tikz@canvas@is@plane}
 \makeatother
