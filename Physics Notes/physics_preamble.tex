@@ -1,0 +1,83 @@
+\usepackage[labelformat=empty]{caption}
+\usepackage[most]{tcolorbox}
+\usepackage{capt-of}
+\usepackage{changepage, amsmath, amssymb, pgfplots, tikz}
+\usepackage{colortbl}
+\usepackage{darkmode}
+\usepackage{fullpage}
+\usepackage{graphicx}
+\usepackage{pst-eucl}
+\usepackage{tabularx}
+\usepackage{tikz-3dplot}
+\usepackage{tkz-euclide}
+\usepackage{ulem}
+
+% === Enable dark mode ===
+% Comment the line below to switch to light mode.
+% Note that some figures will keep a dark background, I might (!) fix this issue later.
+\enabledarkmode
+
+% === Define custom color ===
+\definecolor{myamber}{HTML}{ffc107}
+\definecolor{myblue}{HTML}{2196f3}
+\definecolor{mybluegray}{HTML}{607d8b}
+\definecolor{mybrown}{HTML}{795548}
+\definecolor{mycyan}{HTML}{00bcd4}
+\definecolor{mydeeporange}{HTML}{ff5722}
+\definecolor{mydeeppurple}{HTML}{673ab7}
+\definecolor{mygray}{HTML}{9e9e9e}
+\definecolor{mygreen}{HTML}{4caf50}
+\definecolor{myindigo}{HTML}{3f51b5}
+\definecolor{mylightblue}{HTML}{03a9f4}
+\definecolor{mylightgreen}{HTML}{8bc34a}
+\definecolor{mylime}{HTML}{cddc39}
+\definecolor{myorange}{HTML}{ff9800}
+\definecolor{mypink}{HTML}{e81e63}
+\definecolor{mypurple}{HTML}{9c27b0}
+\definecolor{myred}{HTML}{f44336}
+\definecolor{myteal}{HTML}{009688}
+\definecolor{myyellow}{HTML}{ffeb3b}
+\definecolor{p1}{HTML}{caf0f8}
+\definecolor{p2}{HTML}{ade8f4}
+\definecolor{p3}{HTML}{90e0ef}
+\definecolor{p4}{HTML}{48cae4}
+\definecolor{p5}{HTML}{00b4d8}
+\definecolor{p6}{HTML}{0096c7}
+\definecolor{p7}{HTML}{0077b6}
+\definecolor{p8}{HTML}{023e8a}
+\definecolor{p9}{HTML}{03045e}
+\definecolor{pag}{HTML}{293133}
+
+% === Plot settings ===
+\pgfplotsset{compat=1.16}
+\usetikzlibrary{3d,backgrounds,intersections}
+\usetikzlibrary{arrows.meta}
+\usetikzlibrary{arrows.meta}
+\usetikzlibrary{calc,arrows.meta}
+\usetikzlibrary{calc,patterns,angles,quotes}
+\tikzset{
+    conditional line/.style 2 args={
+            /utils/exec={\pgfmathsetmacro{\xcoordA}{#1}},
+            /utils/exec={\pgfmathsetmacro{\xcoordB}{#2}},
+            insert path={
+                    \ifdim\xcoordA pt>\xcoordB pt
+                        (\xcoordA,0) -- (\xcoordB,0)
+                    \fi
+                },
+        },
+}
+
+\psset{PointName=none,PointSymbol=none}
+
+\usepgfplotslibrary{groupplots}
+\usepgfplotslibrary{groupplots}
+
+% === Fix broken canvas is xy plane at z option ===
+% for more information, see: https://tex.stackexchange.com/a/48776/121799
+\makeatletter
+\tikzoption{canvas is xy plane at z}[]{%
+    \def\tikz@plane@origin{\pgfpointxyz{0}{0}{#1}}%
+    \def\tikz@plane@x{\pgfpointxyz{1}{0}{#1}}%
+    \def\tikz@plane@y{\pgfpointxyz{0}{1}{#1}}%
+    \tikz@canvas@is@plane}
+\makeatother
