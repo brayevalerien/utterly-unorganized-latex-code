@@ -4,16 +4,19 @@
 
 \begin{document}
 
-\noindent\textbf{Human Frequency Range} - Humans can only hear a set range of frequencies of sound. In addition, we have a set range of frequencies that we are more sensitive to.\\
+\textbf{Human Frequency Range} - Humans can only hear a set range of frequencies of sound. In addition, we have a set range of frequencies that we are more sensitive to.
+
 \vspace{-10pt}
 \begin{center}
-	Audible Range: 20 Hz - 20 000 Hz $\:\:\:\:\:\:\:\:$ Sensitive Range: 2000 Hz - 5000 Hz
+	Audible Range: 20 Hz - 20 000 Hz \qquad Sensitive Range: 2000 Hz - 5000 Hz
 \end{center}
+
 \vspace{\baselineskip}
+
 \textbf{Standing Waves} - When a wave is propagated in an environment where it can be reflected back to itself, it will have certain resonant frequencies where it takes on the appearance of a standing wave. A standing wave appears as though it is not moving in one direction, but rather oscillating back and forth.
 \begin{center}
-
-	\hspace*{-8pt} \begin{tikzpicture}
+	\hspace*{-8pt}
+	\begin{tikzpicture}
 		\begin{axis}[
 				height=3.5cm,
 				width=\textwidth+1.6cm,
@@ -34,18 +37,18 @@
 				ylabel=,
 				every axis/.append style={axis line style={pag!80}, tick style={pag!80}}
 			]
-			\addplot[p3, smooth, thick] {0.5*cos(deg((0.25*(x))};
-			\addplot[p4, smooth, thick] {0.5*cos(deg(0.25*(x-6.28*2))};
-
+			\addplot[p3, smooth, thick] {0.5*cos(deg((0.25*(x))))};
+			\addplot[p4, smooth, thick] {0.5*cos(deg(0.25*(x-6.28*2)))};
 		\end{axis}
 	\end{tikzpicture}
 \end{center}
-There are a multitude of cases we will look at where a standing wave can occur, some with the same equations.\\
-\\
+
+There are a multitude of cases we will look at where a standing wave can occur, some with the same equations.
+
 \textbf{Dual Fixed End String} - In this case, both ends of a string are fixed. The resonant frequncies occour when the wavelength is a multiple of half the length $L$.
 \begin{center}
-
-	\hspace*{-8pt} \begin{tikzpicture}
+	\hspace*{-8pt}
+	\begin{tikzpicture}
 		\begin{axis}[
 				height=7cm,
 				width=\textwidth+0.2cm,
@@ -54,7 +57,13 @@ There are a multitude of cases we will look at where a standing wave can occur, 
 				xmax=25.13,
 				xlabel=Standing Wave,
 				ytick={},
-				yticklabels={$\lambda=2L$,$\lambda_4=\frac{1}{2}L$,$\lambda_3=\frac{2}{3}L$,$\lambda_2=\:\:\:L$,$\lambda_1=2L$},
+				yticklabels={
+					$\lambda=2L$,
+					$\lambda_4=\frac{1}{2}L$,
+					$\lambda_3=\frac{2}{3}L$,
+					$\lambda_2=\:\:\:L$,
+					$\lambda_1=2L$
+				},
 				xtick={},
 				xticklabels={},
 				ymax=0.9,
@@ -67,20 +76,18 @@ There are a multitude of cases we will look at where a standing wave can occur, 
 				every axis/.append style={axis line style={pag!80, line width=0.75pt}, tick style={pag!95}}
 			]
 			\newcommand{\feat}{0.2}
-			\addplot[p4, smooth, thick] {0.5+(\feat*sin(deg(0.125*((x)))};
-			\addplot[p4, smooth, thick] {0.5+(\feat*sin(deg(0.125*(x-3.14*8)))};
 
-			\addplot[p5, smooth, thick] {0+(\feat*sin(deg(0.25*((x)))};
-			\addplot[p5, smooth, thick] {0+(\feat*sin(deg(0.25*(x-3.14*4)))};
+			\addplot[p4, smooth, thick] {0.5+(\feat*sin(deg(0.125*((x)))))};
+			\addplot[p4, smooth, thick] {0.5+(\feat*sin(deg(0.125*(x-3.14*8))))};
 
-			\addplot[p6, smooth, thick] {-0.5+(\feat*sin(deg((0.375*x)-9.42477))))};
+			\addplot[p5, smooth, thick] {0+(\feat*sin(deg(0.25*((x)))))};
+			\addplot[p5, smooth, thick] {0+(\feat*sin(deg(0.25*(x-3.14*4))))};
 
-			\addplot[p6, smooth, thick] {-0.5+(\feat*sin(deg((0.375*x)))))};
-			\
+			\addplot[p6, smooth, thick] {-0.5+(\feat*sin(deg((0.375*x)-9.42477)))};
+			\addplot[p6, smooth, thick] {-0.5+(\feat*sin(deg((0.375*x))))};
 
-			\addplot[p7, smooth, thick] {-1+(\feat*sin(deg((0.5*x)-3.14))))};
-
-			\addplot[p7, smooth, thick] {-1+(\feat*sin(deg((0.5*x)))))};
+			\addplot[p7, smooth, thick] {-1+(\feat*sin(deg((0.5*x)-3.14)))};
+			\addplot[p7, smooth, thick] {-1+(\feat*sin(deg((0.5*x))))};
 
 			\draw[dashed, color=pag!95] (axis cs:12.56,\pgfkeysvalueof{/pgfplots/ymin}) -- (axis cs:12.56,\pgfkeysvalueof{/pgfplots/ymax});
 
@@ -88,11 +95,10 @@ There are a multitude of cases we will look at where a standing wave can occur, 
 	\end{tikzpicture}
 \end{center}
 
-\noindent In order for a standing wave to occur, we see we need certain wavelengths, which can be set by changing the frequency of the wave. The frequency number is the number nodes minus 1.
+ In order for a standing wave to occur, we see we need certain wavelengths, which can be set by changing the frequency of the wave. The frequency number is the number nodes minus 1.
 
 \begin{center}
-	$f=\frac{v}{\lambda} \:\:\:\:\:\:\longrightarrow \:\:\:\:\:\: f_n=\frac{nv}{2L}=nf_1$
-
+	$f=\frac{v}{\lambda} \quad\ \longrightarrow \quad\ f_n=\frac{nv}{2L}=nf_1$\\
 	\vspace{\baselineskip}
 	$L=$ String Length $\:\:\:\:$ $v=$ Wave Speed $\:\:\:\:$ $n=$
 	Frequency Number
@@ -100,7 +106,7 @@ There are a multitude of cases we will look at where a standing wave can occur, 
 \textbf{Fundamental Frequency} - The fundamental frequency is $f_1$, or the lowest frequency required for a standing wave to occur. It is also called the 1st harmonic. Subsequently, $f_2$ would be the 2nd harmonic.\\
 \\
 \\
-\noindent\textbf{Special Case} - In all of these equations, it is impossible to determine the amplitude of the wave. We do deal with one special case, where two waves propagate in opposite directions on an infinite string. We can use the formula below to describe the resultant wave. The nodes in this wave are where amplitude is zero, or every half wavelength. \\
+\textbf{Special Case} - In all of these equations, it is impossible to determine the amplitude of the wave. We do deal with one special case, where two waves propagate in opposite directions on an infinite string. We can use the formula below to describe the resultant wave. The nodes in this wave are where amplitude is zero, or every half wavelength. \\
 \begin{center}
 	$y_{net}\left(x,t\right)=\underbrace{2A\sin\left(kx\right)}_{amplitude}\sin\left(\omega t\right)$
 \end{center}
@@ -184,10 +190,11 @@ In both these examples, the pressure wave graph has nodes opposite of the displa
 	\end{tikzpicture}
 \end{center}
 \vspace{\baselineskip}
-\noindent\textbf{Single Closed End Pipe} - For an pipe with only one side closed, the formula changes. This time, in a standing wave, an anti-node always occurs at the open end, while a node occurs at the closed end.
+\textbf{Single Closed End Pipe} - For an pipe with only one side closed, the formula changes. This time, in a standing wave, an anti-node always occurs at the open end, while a node occurs at the closed end.
 \begin{center}
 
-	\hspace*{-8pt} \begin{tikzpicture}
+	\hspace*{-8pt}
+	\begin{tikzpicture}
 		\begin{axis}[
 				height=7cm,
 				width=\textwidth+0.2cm,
@@ -250,7 +257,7 @@ Again, these resonant frequencies only occour at certain wavelengths. The formul
 \end{adjustwidth}
 \vspace{20pt}
 
-\noindent\textbf{Optics} - Optics is the study of light and its behaviors. We often talk about image production and the ways we can make them.\\
+\textbf{Optics} - Optics is the study of light and its behaviors. We often talk about image production and the ways we can make them.\\
 \\
 \begin{figure}[h]
 
@@ -541,7 +548,7 @@ Again, these resonant frequencies only occour at certain wavelengths. The formul
 
 \hspace{-16pt}
 \begin{minipage}{16.5726cm}
-	\noindent\textbf{Concave Ray Diagrams} - When drawing ray diagrams for concave mirrors, draw 4 general rays, when you can. First, parallel to the central axis. Second, to the central axis at the mirror. Third, draw through the focus. Fourth, draw through the central axis. An object beyond the focus produces a virtual image.
+	\textbf{Concave Ray Diagrams} - When drawing ray diagrams for concave mirrors, draw 4 general rays, when you can. First, parallel to the central axis. Second, to the central axis at the mirror. Third, draw through the focus. Fourth, draw through the central axis. An object beyond the focus produces a virtual image.
 	\vspace{10pt}
 \end{minipage}
 
@@ -1075,7 +1082,7 @@ Again, these resonant frequencies only occour at certain wavelengths. The formul
 \end{minipage}
 
 \vspace{10pt}
-\noindent The special concave case is below. The closer to the focus, the larger the image. The  image in this case is always virtual, and has a negative image distance
+ The special concave case is below. The closer to the focus, the larger the image. The  image in this case is always virtual, and has a negative image distance
 \vspace{5pt}
 
 \hspace{-20pt}
@@ -1171,7 +1178,7 @@ Again, these resonant frequencies only occour at certain wavelengths. The formul
 \end{minipage}
 
 \vspace{20pt}
-\noindent \textbf{Convex Ray Diagrams} - Convex Mirrors are relatively simple. The closer to the mirror, the larger the image. The image is always virtual, and the focus point is negative. The distance to the mirror from the object is always the positive value
+ \textbf{Convex Ray Diagrams} - Convex Mirrors are relatively simple. The closer to the mirror, the larger the image. The image is always virtual, and the focus point is negative. The distance to the mirror from the object is always the positive value
 
 \newcommand{\trispacing}{8.5pt}
 \newcommand{\offsetdiagram}{22}
@@ -1347,7 +1354,7 @@ Again, these resonant frequencies only occour at certain wavelengths. The formul
 \end{minipage}
 
 \vspace{20pt}
-\noindent\textbf{Mirror Equations} - We can calculate the distance and height for the object and the image using various equations. First we need to define the variables. All these formulas apply to convex, concave, and flat mirrors. In the case of the flat mirror, if you think about it, the radius of curvature is infinite, which also applies to the focal point.
+\textbf{Mirror Equations} - We can calculate the distance and height for the object and the image using various equations. First we need to define the variables. All these formulas apply to convex, concave, and flat mirrors. In the case of the flat mirror, if you think about it, the radius of curvature is infinite, which also applies to the focal point.
 
 \vspace{10pt}
 \hspace{-20pt}
@@ -1457,13 +1464,13 @@ Again, these resonant frequencies only occour at certain wavelengths. The formul
 \end{minipage}
 \vspace{10pt}
 
-\noindent\textbf{Distance Equation} - The distance of the image, object, or focal point (and therefore also the center) can be calculated using the formula's below. The object distance is always positive. The image is virtual when it is on the opposite side of the object, and all virtual images are negative.
+\textbf{Distance Equation} - The distance of the image, object, or focal point (and therefore also the center) can be calculated using the formula's below. The object distance is always positive. The image is virtual when it is on the opposite side of the object, and all virtual images are negative.
 \begin{center}
 	\fbox{$\frac{1}{u}+\frac{1}{v}=\frac{1}{f} \:\:\:\:\:\:\:\:\:\: u=\left(\frac{1}{f}-\frac{1}{v}\right)^{-1}\:\:\:\:\:\:\:\:\:\: v=\left(\frac{1}{f}-\frac{1}{u}\right)^{-1}$}
 \end{center}
 \vspace{10pt}
 
-\noindent\textbf{Height / Magnification Equation} - The equation for the height of a object involves the image and object distances. Consequently, we additionally define the magnification of the image using this formula. A negative magnification refers to a inverted image. You could use this equation to solve for distances.
+\textbf{Height / Magnification Equation} - The equation for the height of a object involves the image and object distances. Consequently, we additionally define the magnification of the image using this formula. A negative magnification refers to a inverted image. You could use this equation to solve for distances.
 \begin{center}
 	\fbox{\large$M=\frac{I}{O}=\frac{-v}{u} \:\:\:\:\:\:\:\:\:\: I=\frac{-vO}{u} \:\:\:\:\:\:\:\:\:\: O=\frac{uI}{-v}$}
 \end{center}
@@ -1567,7 +1574,7 @@ Again, these resonant frequencies only occour at certain wavelengths. The formul
 
 \vspace{10pt}
 \hspace{-15pt}\begin{minipage}{0.98\textwidth}
-	\noindent\textbf{Total Internal Reflection} - Total internal reflection is used for a variety of things. One of these is fiber optics, where information is transmitted via light traveling through a tube with no imperfections (imperfections cause the light to bleed out). The reason why diamonds tend to sparkle is because the refractive index is very high, leading to a very low critical angle. In turn, it can capture light from many different angles and bounce it around.
+	\textbf{Total Internal Reflection} - Total internal reflection is used for a variety of things. One of these is fiber optics, where information is transmitted via light traveling through a tube with no imperfections (imperfections cause the light to bleed out). The reason why diamonds tend to sparkle is because the refractive index is very high, leading to a very low critical angle. In turn, it can capture light from many different angles and bounce it around.
 	\vspace{15pt}
 \end{minipage}
 
@@ -1776,12 +1783,12 @@ Again, these resonant frequencies only occour at certain wavelengths. The formul
 
 \vspace{12pt}
 \hspace{-15pt}\begin{minipage}{0.98\textwidth}
-	\noindent\textbf{Thin Lens Approximation} - Again, we make an approximation when dealing with lenses. If you think about it, a ray of light entering the lens will a slightly refracted slope as it travels through the lens. In turn, we a assume the lens is very thin, allowing us to use our formulas.
+	\textbf{Thin Lens Approximation} - Again, we make an approximation when dealing with lenses. If you think about it, a ray of light entering the lens will a slightly refracted slope as it travels through the lens. In turn, we a assume the lens is very thin, allowing us to use our formulas.
 	\vspace{15pt}
 \end{minipage}
 \vspace{10pt}
 
-\noindent \textbf{Converging Lens Ray Diagrams} - When drawing ray diagrams, you only have 3 main rays to consider, as seen below. When the object is beyond the focal point, the image will be inverted, and real. We assume a image to be real when it is on the opposite side of the lens that the object is on. When the object passes the focal point, the image is upright and virtual. The focus is \textbf{positive}.
+ \textbf{Converging Lens Ray Diagrams} - When drawing ray diagrams, you only have 3 main rays to consider, as seen below. When the object is beyond the focal point, the image will be inverted, and real. We assume a image to be real when it is on the opposite side of the lens that the object is on. When the object passes the focal point, the image is upright and virtual. The focus is \textbf{positive}.
 \vspace{10pt}
 
 \newcommand{\convgyscale}{1}
@@ -2217,7 +2224,7 @@ Again, these resonant frequencies only occour at certain wavelengths. The formul
 	\end{tikzpicture}}
 
 \vspace{20pt}
-\noindent\textbf{Diverging Lens Ray Diagrams} - When drawing diverging lens diagrams, things are much simpler. The image is always virtual and upright. The image will always be larger then object. The focal length is considered to be negative.
+\textbf{Diverging Lens Ray Diagrams} - When drawing diverging lens diagrams, things are much simpler. The image is always virtual and upright. The image will always be larger then object. The focal length is considered to be negative.
 \vspace{10pt}
 
 \hspace{-15pt}\fcolorbox{\rbcolor}{\rbocolor}{\begin{tikzpicture}[scale=\convgscale, yscale=\convgyscale]
@@ -2393,7 +2400,7 @@ Again, these resonant frequencies only occour at certain wavelengths. The formul
 	\end{tikzpicture}}
 
 \vspace{20pt}
-\noindent\textbf{Lens Equations} - The equations we use for lenses are exactly the same as the ones for mirrors. The only thing you have to watch out for is the focus, which is negative in diverging mirrors and positive in converging mirrors.\\
+\textbf{Lens Equations} - The equations we use for lenses are exactly the same as the ones for mirrors. The only thing you have to watch out for is the focus, which is negative in diverging mirrors and positive in converging mirrors.\\
 \\
 \\
 \\
